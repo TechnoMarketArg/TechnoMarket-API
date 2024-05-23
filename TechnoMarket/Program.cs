@@ -1,4 +1,6 @@
+using Microsoft.EntityFrameworkCore;
 using TechnoMarket.Application.Services;
+using TechnoMarket.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +12,9 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 //inicializacion de los servicios de los controllers
 builder.Services.AddSingleton<UserService, UserService>();
+
+builder.Services.AddDbContext<ApplicationContext>(dbContextOptions => dbContextOptions.UseSqlite(
+builder.Configuration["ConnectionStrings:TechnoMarketDBConnectionString"]));// Dependencia de Context.
 
 var app = builder.Build();
 

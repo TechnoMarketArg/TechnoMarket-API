@@ -1,22 +1,16 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\sebas\\OneDrive\\Escritorio\\TechnoMarket\\TechnoMarket-API\\TechnoMarket\\",
+  "WorkspaceRootPath": "C:\\Users\\tadeo\\OneDrive\\Escritorio\\Programas cufa\\tpiP3\\TechnoMarket-API\\TechnoMarket\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{66002AF5-1D27-48AF-AA79-1AD60AE567FA}|..\\TechnoMarket.Application\\TechnoMarket.Application.csproj|c:\\users\\sebas\\onedrive\\escritorio\\technomarket\\technomarket-api\\technomarket.application\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3469C311-74A6-4DDB-9DD0-4A70564D312E}|TechnoMarket.csproj|c:\\users\\tadeo\\onedrive\\escritorio\\programas cufa\\tpip3\\technomarket-api\\technomarket\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3469C311-74A6-4DDB-9DD0-4A70564D312E}|TechnoMarket.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3469C311-74A6-4DDB-9DD0-4A70564D312E}|TechnoMarket.csproj|c:\\users\\sebas\\onedrive\\escritorio\\technomarket\\technomarket-api\\technomarket\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3469C311-74A6-4DDB-9DD0-4A70564D312E}|TechnoMarket.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{10C51D26-3C74-40C6-B75E-4CFCDB9342A1}|..\\TechnoMarket.Infrastructure\\TechnoMarket.Infrastructure.csproj|c:\\users\\tadeo\\onedrive\\escritorio\\programas cufa\\tpip3\\technomarket-api\\technomarket.infrastructure\\applicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{10C51D26-3C74-40C6-B75E-4CFCDB9342A1}|..\\TechnoMarket.Infrastructure\\TechnoMarket.Infrastructure.csproj|c:\\users\\sebas\\onedrive\\escritorio\\technomarket\\technomarket-api\\technomarket.infrastructure\\applicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{10C51D26-3C74-40C6-B75E-4CFCDB9342A1}|..\\TechnoMarket.Infrastructure\\TechnoMarket.Infrastructure.csproj|c:\\users\\sebas\\onedrive\\escritorio\\technomarket\\technomarket-api\\technomarket.infrastructure\\technomarket.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{10C51D26-3C74-40C6-B75E-4CFCDB9342A1}|..\\TechnoMarket.Infrastructure\\TechnoMarket.Infrastructure.csproj|c:\\users\\sebas\\onedrive\\escritorio\\technomarket\\technomarket-api\\technomarket.infrastructure\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{10C51D26-3C74-40C6-B75E-4CFCDB9342A1}|..\\TechnoMarket.Infrastructure\\TechnoMarket.Infrastructure.csproj|c:\\users\\tadeo\\onedrive\\escritorio\\programas cufa\\tpip3\\technomarket-api\\technomarket.infrastructure\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,71 +20,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\sebas\\OneDrive\\Escritorio\\TechnoMarket\\TechnoMarket-API\\TechnoMarket.Infrastructure\\Repositories\\UserRepository.cs",
-              "RelativeDocumentMoniker": "..\\TechnoMarket.Infrastructure\\Repositories\\UserRepository.cs",
-              "ToolTip": "C:\\Users\\sebas\\OneDrive\\Escritorio\\TechnoMarket\\TechnoMarket-API\\TechnoMarket.Infrastructure\\Repositories\\UserRepository.cs",
-              "RelativeToolTip": "..\\TechnoMarket.Infrastructure\\Repositories\\UserRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T00:01:29.632Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TechnoMarket.Infrastructure.csproj",
-              "DocumentMoniker": "C:\\Users\\sebas\\OneDrive\\Escritorio\\TechnoMarket\\TechnoMarket-API\\TechnoMarket.Infrastructure\\TechnoMarket.Infrastructure.csproj",
-              "RelativeDocumentMoniker": "..\\TechnoMarket.Infrastructure\\TechnoMarket.Infrastructure.csproj",
-              "ToolTip": "C:\\Users\\sebas\\OneDrive\\Escritorio\\TechnoMarket\\TechnoMarket-API\\TechnoMarket.Infrastructure\\TechnoMarket.Infrastructure.csproj",
-              "RelativeToolTip": "..\\TechnoMarket.Infrastructure\\TechnoMarket.Infrastructure.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-05-21T23:40:10.086Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ApplicationContext.cs",
-              "DocumentMoniker": "C:\\Users\\sebas\\OneDrive\\Escritorio\\TechnoMarket\\TechnoMarket-API\\TechnoMarket.Infrastructure\\ApplicationContext.cs",
-              "RelativeDocumentMoniker": "..\\TechnoMarket.Infrastructure\\ApplicationContext.cs",
-              "ToolTip": "C:\\Users\\sebas\\OneDrive\\Escritorio\\TechnoMarket\\TechnoMarket-API\\TechnoMarket.Infrastructure\\ApplicationContext.cs",
-              "RelativeToolTip": "..\\TechnoMarket.Infrastructure\\ApplicationContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\tadeo\\OneDrive\\Escritorio\\Programas cufa\\tpiP3\\TechnoMarket-API\\TechnoMarket.Infrastructure\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "..\\TechnoMarket.Infrastructure\\Repositories\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\tadeo\\OneDrive\\Escritorio\\Programas cufa\\tpiP3\\TechnoMarket-API\\TechnoMarket.Infrastructure\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "..\\TechnoMarket.Infrastructure\\Repositories\\UserRepository.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAuwAcAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-21T23:41:00.373Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-23T01:22:58.508Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\sebas\\OneDrive\\Escritorio\\TechnoMarket\\TechnoMarket-API\\TechnoMarket\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\sebas\\OneDrive\\Escritorio\\TechnoMarket\\TechnoMarket-API\\TechnoMarket\\Controllers\\UserController.cs",
-              "RelativeToolTip": "Controllers\\UserController.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABQAAAAmAAAA",
+              "Title": "ApplicationContext.cs",
+              "DocumentMoniker": "C:\\Users\\tadeo\\OneDrive\\Escritorio\\Programas cufa\\tpiP3\\TechnoMarket-API\\TechnoMarket.Infrastructure\\ApplicationContext.cs",
+              "RelativeDocumentMoniker": "..\\TechnoMarket.Infrastructure\\ApplicationContext.cs",
+              "ToolTip": "C:\\Users\\tadeo\\OneDrive\\Escritorio\\Programas cufa\\tpiP3\\TechnoMarket-API\\TechnoMarket.Infrastructure\\ApplicationContext.cs",
+              "RelativeToolTip": "..\\TechnoMarket.Infrastructure\\ApplicationContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-21T23:25:45.117Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-23T01:48:22.421Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Users\\sebas\\OneDrive\\Escritorio\\TechnoMarket\\TechnoMarket-API\\TechnoMarket.Application\\Services\\UserService.cs",
-              "RelativeDocumentMoniker": "..\\TechnoMarket.Application\\Services\\UserService.cs",
-              "ToolTip": "C:\\Users\\sebas\\OneDrive\\Escritorio\\TechnoMarket\\TechnoMarket-API\\TechnoMarket.Application\\Services\\UserService.cs",
-              "RelativeToolTip": "..\\TechnoMarket.Application\\Services\\UserService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAJAAAA",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\tadeo\\OneDrive\\Escritorio\\Programas cufa\\tpiP3\\TechnoMarket-API\\TechnoMarket\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\tadeo\\OneDrive\\Escritorio\\Programas cufa\\tpiP3\\TechnoMarket-API\\TechnoMarket\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-21T23:22:57.975Z",
+              "WhenOpened": "2024-05-23T01:48:34.393Z",
               "EditorCaption": ""
             }
           ]
