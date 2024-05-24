@@ -9,3 +9,5 @@ C:\Users\sebas\OneDrive\Escritorio\TechnoMarket\TechnoMarket-API\TechnoMarket.Do
 C:\Users\sebas\OneDrive\Escritorio\TechnoMarket\TechnoMarket-API\TechnoMarket.Domain\obj\Debug\net8.0\refint\TechnoMarket.Domain.dll
 C:\Users\sebas\OneDrive\Escritorio\TechnoMarket\TechnoMarket-API\TechnoMarket.Domain\obj\Debug\net8.0\TechnoMarket.Domain.pdb
 C:\Users\sebas\OneDrive\Escritorio\TechnoMarket\TechnoMarket-API\TechnoMarket.Domain\obj\Debug\net8.0\ref\TechnoMarket.Domain.dll
+C:\Users\sebas\OneDrive\Escritorio\TechnoMarket\TechnoMarket-API\TechnoMarket.Domain\obj\Debug\net8.0\TechnoMarket.Domain.sourcelink.json
+C:\Users\sebas\OneDrive\Escritorio\TechnoMarket\TechnoMarket-API\TechnoMarket.Domain\obj\Debug\net8.0\TechnoMarket.Domain.csproj.AssemblyReference.cache

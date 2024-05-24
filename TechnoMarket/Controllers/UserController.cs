@@ -20,5 +20,17 @@ namespace TechnoMarket.Controllers
         {
             return Ok(_userService.Get(name));
         }
+
+        [HttpGet]
+        public IActionResult Get()
+        {
+            return Ok(_userService.Get());
+        }
+
+        [HttpPost]
+        public IActionResult AddUser([FromBody]User user)
+        {
+            return Ok(_userService.AddUser(user));
+        }
     }
 }

@@ -13,3 +13,4 @@ C:\Users\sebas\OneDrive\Escritorio\TechnoMarket\TechnoMarket-API\TechnoMarket.Ap
 C:\Users\sebas\OneDrive\Escritorio\TechnoMarket\TechnoMarket-API\TechnoMarket.Application\obj\Debug\net8.0\refint\TechnoMarket.Application.dll
 C:\Users\sebas\OneDrive\Escritorio\TechnoMarket\TechnoMarket-API\TechnoMarket.Application\obj\Debug\net8.0\TechnoMarket.Application.pdb
 C:\Users\sebas\OneDrive\Escritorio\TechnoMarket\TechnoMarket-API\TechnoMarket.Application\obj\Debug\net8.0\ref\TechnoMarket.Application.dll
+C:\Users\sebas\OneDrive\Escritorio\TechnoMarket\TechnoMarket-API\TechnoMarket.Application\obj\Debug\net8.0\TechnoMarket.Application.sourcelink.json
