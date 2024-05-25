@@ -4,11 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TechnoMarket.Domain.Entities;
+using TechnoMarket.Domain.Interfaces;
 
 // Interactuar con la DB.
 namespace TechnoMarket.Infrastructure.Repositories
 {
-    public class UserRepository
+    public class UserRepository : IUserRepository
     {
         private readonly ApplicationContext _context; //Inyeccion de Dependencia. 
         public UserRepository(ApplicationContext context)

@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "0sElo/QPOFTLlRCdXpXcoY6GmztGkqKK5KCbrLnfKAwD4keJ1tvWz2P1/BxYCkQpX71LamJh709ycBtOkcZerw==",
+  "dgSpecHash": "RqOdR1DOhkORKVpTZ1n74VGee+VJiefaWIW4ejjnJtBj4sdSa4Y+Q3snbLLt3WD47HkmxrPYsQpSYadrlvR7CA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\tadeo\\OneDrive\\Escritorio\\Programas cufa\\tpiP3\\TechnoMarket-API\\TechnoMarket.Domain\\TechnoMarket.Domain.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Domain\\TechnoMarket.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\augus\\.nuget\\packages\\sqlite-net-pcl\\1.9.172\\sqlite-net-pcl.1.9.172.nupkg.sha512",
+    "C:\\Users\\augus\\.nuget\\packages\\sqlitepclraw.bundle_green\\2.1.2\\sqlitepclraw.bundle_green.2.1.2.nupkg.sha512",
+    "C:\\Users\\augus\\.nuget\\packages\\sqlitepclraw.core\\2.1.2\\sqlitepclraw.core.2.1.2.nupkg.sha512",
+    "C:\\Users\\augus\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.1.2\\sqlitepclraw.lib.e_sqlite3.2.1.2.nupkg.sha512",
+    "C:\\Users\\augus\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3\\2.1.2\\sqlitepclraw.provider.e_sqlite3.2.1.2.nupkg.sha512",
+    "C:\\Users\\augus\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512"
+  ],
   "logs": []
 }

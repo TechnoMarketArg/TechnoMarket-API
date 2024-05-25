@@ -11,5 +11,12 @@ namespace TechnoMarket.Infrastructure
     public class ApplicationContext : DbContext
     {
         public DbSet<User> Users { get; set; }
+
+        private readonly bool isTestingEnviroment;
+
+        public ApplicationContext(DbContextOptions<ApplicationContext> options, bool isTestingEnviroment = false) : base(options)
+        {
+            this.isTestingEnviroment = isTestingEnviroment;
+        }
     }
 }

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tadeo\\OneDrive\\Escritorio\\Programas cufa\\tpiP3\\TechnoMarket-API\\TechnoMarket.Domain\\TechnoMarket.Domain.csproj": {}
+    "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Domain\\TechnoMarket.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tadeo\\OneDrive\\Escritorio\\Programas cufa\\tpiP3\\TechnoMarket-API\\TechnoMarket.Domain\\TechnoMarket.Domain.csproj": {
+    "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Domain\\TechnoMarket.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tadeo\\OneDrive\\Escritorio\\Programas cufa\\tpiP3\\TechnoMarket-API\\TechnoMarket.Domain\\TechnoMarket.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Domain\\TechnoMarket.Domain.csproj",
         "projectName": "TechnoMarket.Domain",
-        "projectPath": "C:\\Users\\tadeo\\OneDrive\\Escritorio\\Programas cufa\\tpiP3\\TechnoMarket-API\\TechnoMarket.Domain\\TechnoMarket.Domain.csproj",
-        "packagesPath": "C:\\Users\\tadeo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tadeo\\OneDrive\\Escritorio\\Programas cufa\\tpiP3\\TechnoMarket-API\\TechnoMarket.Domain\\obj\\",
+        "projectPath": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Domain\\TechnoMarket.Domain.csproj",
+        "packagesPath": "C:\\Users\\augus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\tadeo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\augus\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -44,6 +44,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.9.172, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

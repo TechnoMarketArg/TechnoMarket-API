@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tadeo\\OneDrive\\Escritorio\\Programas cufa\\tpiP3\\TechnoMarket-API\\TechnoMarket.Infrastructure\\TechnoMarket.Infrastructure.csproj": {}
+    "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Infrastructure\\TechnoMarket.Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tadeo\\OneDrive\\Escritorio\\Programas cufa\\tpiP3\\TechnoMarket-API\\TechnoMarket.Application\\TechnoMarket.Application.csproj": {
+    "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Application\\TechnoMarket.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tadeo\\OneDrive\\Escritorio\\Programas cufa\\tpiP3\\TechnoMarket-API\\TechnoMarket.Application\\TechnoMarket.Application.csproj",
+        "projectUniqueName": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Application\\TechnoMarket.Application.csproj",
         "projectName": "TechnoMarket.Application",
-        "projectPath": "C:\\Users\\tadeo\\OneDrive\\Escritorio\\Programas cufa\\tpiP3\\TechnoMarket-API\\TechnoMarket.Application\\TechnoMarket.Application.csproj",
-        "packagesPath": "C:\\Users\\tadeo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tadeo\\OneDrive\\Escritorio\\Programas cufa\\tpiP3\\TechnoMarket-API\\TechnoMarket.Application\\obj\\",
+        "projectPath": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Application\\TechnoMarket.Application.csproj",
+        "packagesPath": "C:\\Users\\augus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\tadeo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\augus\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\tadeo\\OneDrive\\Escritorio\\Programas cufa\\tpiP3\\TechnoMarket-API\\TechnoMarket.Domain\\TechnoMarket.Domain.csproj": {
-                "projectPath": "C:\\Users\\tadeo\\OneDrive\\Escritorio\\Programas cufa\\tpiP3\\TechnoMarket-API\\TechnoMarket.Domain\\TechnoMarket.Domain.csproj"
+              "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Domain\\TechnoMarket.Domain.csproj": {
+                "projectPath": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Domain\\TechnoMarket.Domain.csproj"
               }
             }
           }
@@ -68,17 +68,17 @@
         }
       }
     },
-    "C:\\Users\\tadeo\\OneDrive\\Escritorio\\Programas cufa\\tpiP3\\TechnoMarket-API\\TechnoMarket.Domain\\TechnoMarket.Domain.csproj": {
+    "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Domain\\TechnoMarket.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tadeo\\OneDrive\\Escritorio\\Programas cufa\\tpiP3\\TechnoMarket-API\\TechnoMarket.Domain\\TechnoMarket.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Domain\\TechnoMarket.Domain.csproj",
         "projectName": "TechnoMarket.Domain",
-        "projectPath": "C:\\Users\\tadeo\\OneDrive\\Escritorio\\Programas cufa\\tpiP3\\TechnoMarket-API\\TechnoMarket.Domain\\TechnoMarket.Domain.csproj",
-        "packagesPath": "C:\\Users\\tadeo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tadeo\\OneDrive\\Escritorio\\Programas cufa\\tpiP3\\TechnoMarket-API\\TechnoMarket.Domain\\obj\\",
+        "projectPath": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Domain\\TechnoMarket.Domain.csproj",
+        "packagesPath": "C:\\Users\\augus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\tadeo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\augus\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -108,6 +108,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.9.172, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -128,17 +134,17 @@
         }
       }
     },
-    "C:\\Users\\tadeo\\OneDrive\\Escritorio\\Programas cufa\\tpiP3\\TechnoMarket-API\\TechnoMarket.Infrastructure\\TechnoMarket.Infrastructure.csproj": {
+    "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Infrastructure\\TechnoMarket.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tadeo\\OneDrive\\Escritorio\\Programas cufa\\tpiP3\\TechnoMarket-API\\TechnoMarket.Infrastructure\\TechnoMarket.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Infrastructure\\TechnoMarket.Infrastructure.csproj",
         "projectName": "TechnoMarket.Infrastructure",
-        "projectPath": "C:\\Users\\tadeo\\OneDrive\\Escritorio\\Programas cufa\\tpiP3\\TechnoMarket-API\\TechnoMarket.Infrastructure\\TechnoMarket.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\tadeo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tadeo\\OneDrive\\Escritorio\\Programas cufa\\tpiP3\\TechnoMarket-API\\TechnoMarket.Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Infrastructure\\TechnoMarket.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\augus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\tadeo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\augus\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -152,8 +158,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\tadeo\\OneDrive\\Escritorio\\Programas cufa\\tpiP3\\TechnoMarket-API\\TechnoMarket.Application\\TechnoMarket.Application.csproj": {
-                "projectPath": "C:\\Users\\tadeo\\OneDrive\\Escritorio\\Programas cufa\\tpiP3\\TechnoMarket-API\\TechnoMarket.Application\\TechnoMarket.Application.csproj"
+              "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Application\\TechnoMarket.Application.csproj": {
+                "projectPath": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Application\\TechnoMarket.Application.csproj"
               }
             }
           }
@@ -177,7 +183,19 @@
               "target": "Package",
               "version": "[8.0.5, )"
             },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.5, )"
+            },
             "Microsoft.EntityFrameworkCore.Sqlite.Core": {
+              "target": "Package",
+              "version": "[8.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.5, )"
             }
