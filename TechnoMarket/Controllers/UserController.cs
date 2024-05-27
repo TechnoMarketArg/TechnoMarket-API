@@ -21,7 +21,7 @@ namespace TechnoMarket.Controllers
             return Ok(_userService.Get(name));
         }
 
-        [HttpGet]
+        [HttpGet("All")]
         public IActionResult Get()
         {
             return Ok(_userService.Get());
@@ -31,6 +31,12 @@ namespace TechnoMarket.Controllers
         public IActionResult AddUser([FromBody]User user)
         {
             return Ok(_userService.AddUser(user));
+        }
+
+        [HttpDelete]
+        public IActionResult DeleteUser([FromQuery] int id)
+        {
+            return Ok(_userService.DeleteUser(id));
         }
     }
 }

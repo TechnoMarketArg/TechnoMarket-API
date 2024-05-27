@@ -11,6 +11,7 @@ namespace TechnoMarket.Infrastructure
     public class ApplicationContext : DbContext
     {
         public DbSet<User> Users { get; set; }
+        public DbSet<Product> Products { get; set; }
 
 
         private readonly bool isTestingEnviroment;
@@ -18,6 +19,14 @@ namespace TechnoMarket.Infrastructure
         public ApplicationContext(DbContextOptions<ApplicationContext> options, bool isTestingEnviroment = false) : base(options)
         {
             this.isTestingEnviroment = isTestingEnviroment;
+        }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<Product>()
+                .HasKey(p => p.Id); // Define la clave primaria para Product
         }
     }
 }

@@ -726,6 +726,7 @@
       },
       "TechnoMarket.Domain/1.0.0": {
         "dependencies": {
+          "Microsoft.EntityFrameworkCore.Abstractions": "8.0.5",
           "sqlite-net-pcl": "1.9.172"
         },
         "runtime": {

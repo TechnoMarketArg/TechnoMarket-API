@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "YeHAakXPAlc6IpTiBBvxOMo4Y7QnWoSm2/VqZboDrPuMHDhMtm/1VKAFpeykGcfZVhTKFfHXriNWC5ORnm91XA==",
+  "dgSpecHash": "ve9JDYfvlA40HLpQdXGWumKRI911PR+FmincC0iphGDSSWwNHllqBoHcJkm+Ly0jLVqhQQx7nQv+b7QwxwR5Fg==",
   "success": true,
   "projectFilePath": "C:\\Users\\sebas\\OneDrive\\Escritorio\\TechnoMarket\\TechnoMarket-API\\TechnoMarket.Domain\\TechnoMarket.Domain.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\sebas\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.5\\microsoft.entityframeworkcore.abstractions.8.0.5.nupkg.sha512",
     "C:\\Users\\sebas\\.nuget\\packages\\sqlite-net-pcl\\1.9.172\\sqlite-net-pcl.1.9.172.nupkg.sha512",
     "C:\\Users\\sebas\\.nuget\\packages\\sqlitepclraw.bundle_green\\2.1.2\\sqlitepclraw.bundle_green.2.1.2.nupkg.sha512",
     "C:\\Users\\sebas\\.nuget\\packages\\sqlitepclraw.core\\2.1.2\\sqlitepclraw.core.2.1.2.nupkg.sha512",

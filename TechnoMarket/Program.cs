@@ -15,6 +15,8 @@ builder.Services.AddSwaggerGen();
 //inicializacion de los servicios de los controllers
 builder.Services.AddScoped<UserService, UserService>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<ProductService, ProductService>();
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddDbContext<ApplicationContext>(dbContextOptions => dbContextOptions.UseSqlite(
 builder.Configuration["ConnectionStrings:TechnoMarketDBConnectionString"], b => b.MigrationsAssembly("TechnoMarket")));// Dependencia de Context.
 

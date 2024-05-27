@@ -29,5 +29,10 @@ namespace TechnoMarket.Application.Services
         {
             return _repository.AddUser(user);
         }
+
+        public User DeleteUser(int id)
+        {
+            return _repository.DeleteUser(id);
+        }
     }
 }

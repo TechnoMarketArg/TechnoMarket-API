@@ -30,6 +30,17 @@ namespace TechnoMarket.Infrastructure.Repositories
         {
             _context.Users.Add(user);
             _context.SaveChanges();
+
+            return user;
+        }
+
+        public User DeleteUser(int id) 
+        {
+            User user = _context.Users.FirstOrDefault(u => u.Id == id);
+
+            _context.Users.Remove(user);
+            _context.SaveChanges();
+
             return user;
         }
     }
