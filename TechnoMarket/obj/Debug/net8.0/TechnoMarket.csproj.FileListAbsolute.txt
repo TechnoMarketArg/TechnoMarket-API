@@ -135,3 +135,5 @@ C:\Users\sebas\OneDrive\Escritorio\TechnoMarket\TechnoMarket-API\TechnoMarket\bi
 C:\Users\sebas\OneDrive\Escritorio\TechnoMarket\TechnoMarket-API\TechnoMarket\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\sebas\OneDrive\Escritorio\TechnoMarket\TechnoMarket-API\TechnoMarket\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\sebas\OneDrive\Escritorio\TechnoMarket\TechnoMarket-API\TechnoMarket\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\sebas\OneDrive\Escritorio\TechnoMarket\TechnoMarket-API\TechnoMarket\bin\Debug\net8.0\Castle.Core.dll
+C:\Users\sebas\OneDrive\Escritorio\TechnoMarket\TechnoMarket-API\TechnoMarket\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Proxies.dll

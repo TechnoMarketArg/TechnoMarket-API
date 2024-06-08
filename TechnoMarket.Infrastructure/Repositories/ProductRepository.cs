@@ -22,7 +22,7 @@ namespace TechnoMarket.Infrastructure.Repositories
            return _context.Products.ToList();
         }
 
-        public Product? GetById(int id)
+        public Product? GetById(Guid id)
         {
             return _context.Products.FirstOrDefault(p => p.Id == id);
         }

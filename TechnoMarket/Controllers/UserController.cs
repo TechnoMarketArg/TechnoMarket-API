@@ -1,7 +1,9 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using TechnoMarket.Application.IServices;
 using TechnoMarket.Application.Services;
 using TechnoMarket.Domain.Entities;
+using TechnoMarket.Models;
 
 namespace TechnoMarket.Controllers
 {
@@ -9,8 +11,8 @@ namespace TechnoMarket.Controllers
     [ApiController]
     public class UserController : ControllerBase
     {
-        private readonly UserService _userService;
-        public UserController(UserService userService)
+        private readonly IUserService _userService;
+        public UserController(IUserService userService)
         {
             _userService = userService;
         }
@@ -28,13 +30,20 @@ namespace TechnoMarket.Controllers
         }
 
         [HttpPost]
-        public IActionResult AddUser([FromBody]User user)
+        public IActionResult AddUser([FromBody]UserDto userDto)
         {
+            var user = new User
+            {
+                FirstName = userDto.FirstName,
+                Email = userDto.Email,
+                //RoleId = userDto.RoleId,
+            };
+
             return Ok(_userService.AddUser(user));
         }
 
         [HttpDelete]
-        public IActionResult DeleteUser([FromQuery] int id)
+        public IActionResult DeleteUser([FromQuery] Guid id)
         {
             return Ok(_userService.DeleteUser(id));
         }

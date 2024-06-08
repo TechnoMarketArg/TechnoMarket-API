@@ -34,12 +34,14 @@ namespace TechnoMarket.Infrastructure.Repositories
             return user;
         }
 
-        public User DeleteUser(int id) 
+        public User? DeleteUser(Guid id)
         {
-            User user = _context.Users.FirstOrDefault(u => u.Id == id);
-
-            _context.Users.Remove(user);
-            _context.SaveChanges();
+            var user = _context.Users.FirstOrDefault(u => u.Id == id);
+            if (user != null)
+            {
+                _context.Users.Remove(user);
+                _context.SaveChanges();
+            }
 
             return user;
         }

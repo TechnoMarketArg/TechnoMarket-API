@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using TechnoMarket.Application.IServices;
 using TechnoMarket.Application.Services;
 
 namespace TechnoMarket.Controllers
@@ -8,8 +9,8 @@ namespace TechnoMarket.Controllers
     [ApiController]
     public class ProductController : ControllerBase
     {
-        private readonly ProductService _productService;
-        public ProductController(ProductService productService)
+        private readonly IProductService _productService;
+        public ProductController(IProductService productService)
         {
             _productService = productService;
         }
@@ -21,7 +22,7 @@ namespace TechnoMarket.Controllers
         }
 
         [HttpGet("GetById")]
-        public IActionResult GetById([FromQuery]int id) 
+        public IActionResult GetById([FromQuery]Guid id) 
         {
             var product = _productService.GetById(id);
 

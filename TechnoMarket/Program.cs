@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using TechnoMarket.Application.IServices;
 using TechnoMarket.Application.Services;
 using TechnoMarket.Domain.Interfaces;
 using TechnoMarket.Infrastructure;
@@ -13,10 +14,21 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 //inicializacion de los servicios de los controllers
-builder.Services.AddScoped<UserService, UserService>();
+
+#region Repositories
 builder.Services.AddScoped<IUserRepository, UserRepository>();
-builder.Services.AddScoped<ProductService, ProductService>();
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
+builder.Services.AddScoped<IStoreRepository, StoreRepository>(); 
+builder.Services.AddScoped<IRoleRepository, RoleRepository>();
+#endregion
+
+#region Services
+builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<IProductService, ProductService>();
+builder.Services.AddScoped<IStoreService, StoreService>();
+builder.Services.AddScoped<IRoleService, RoleService>();
+#endregion
+
 builder.Services.AddDbContext<ApplicationContext>(dbContextOptions => dbContextOptions.UseSqlite(
 builder.Configuration["ConnectionStrings:TechnoMarketDBConnectionString"], b => b.MigrationsAssembly("TechnoMarket")));// Dependencia de Context.
 

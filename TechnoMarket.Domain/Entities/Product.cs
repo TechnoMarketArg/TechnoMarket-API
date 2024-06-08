@@ -12,12 +12,17 @@ namespace TechnoMarket.Domain.Entities
     public class Product
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int Id { get; set; }
+        public Guid Id { get; set; }
 
         public string Name { get; set; }
 
         public decimal Price { get; set; }
+
+        public Store Store {  get; set; }
+
+        //public int StoreId {  get; set; }
+
+        public Product() { }
 
     }
 }

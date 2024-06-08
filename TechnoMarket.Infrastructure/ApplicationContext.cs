@@ -12,6 +12,8 @@ namespace TechnoMarket.Infrastructure
     {
         public DbSet<User> Users { get; set; }
         public DbSet<Product> Products { get; set; }
+        public DbSet<Store> Stores { get; set; }
+        public DbSet<Role> Roles { get; set; }
 
 
         private readonly bool isTestingEnviroment;
@@ -25,8 +27,20 @@ namespace TechnoMarket.Infrastructure
         {
             base.OnModelCreating(modelBuilder);
 
+            // Configuración para la entidad Product
             modelBuilder.Entity<Product>()
                 .HasKey(p => p.Id); // Define la clave primaria para Product
+
+            // Configuración para la entidad User
+            /*modelBuilder.Entity<User>()
+                .HasOne(u => u.Role)    // Establece la relación uno a muchos con Role
+                .WithMany()             // Sin propiedad de navegación de colección en Role
+                .HasForeignKey(u => u.RoleId); // Define la clave foránea en User que apunta a Role*/
+
+            /*modelBuilder.Entity<Store>()
+                .HasMany(s => s.Inventory) //una tienda tiene muchos productos
+                .WithOne(p => p.Store) //un producto viene de una tieda
+                .HasForeignKey(p => p.StoreId);*/
         }
     }
 }

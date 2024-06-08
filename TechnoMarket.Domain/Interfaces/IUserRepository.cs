@@ -12,6 +12,6 @@ namespace TechnoMarket.Domain.Interfaces
         User? Get(string name);
         List<User> Get();
         User AddUser(User user);
-        User DeleteUser(int id);
+        User? DeleteUser(Guid id);
     }
 }
