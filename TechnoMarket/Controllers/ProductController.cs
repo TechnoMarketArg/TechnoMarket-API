@@ -1,7 +1,10 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using TechnoMarket.Application.IServices;
 using TechnoMarket.Application.Services;
+using TechnoMarket.Domain.DTOs;
+using TechnoMarket.Domain.Entities;
 
 namespace TechnoMarket.Controllers
 {
@@ -22,7 +25,7 @@ namespace TechnoMarket.Controllers
         }
 
         [HttpGet("GetById")]
-        public IActionResult GetById([FromQuery]Guid id) 
+        public ActionResult<Product> GetById([FromQuery]Guid id) 
         {
             var product = _productService.GetById(id);
 
@@ -32,6 +35,20 @@ namespace TechnoMarket.Controllers
             }
 
             return Ok(_productService.GetById(id));
+        }
+
+        [HttpPost("Add")]
+        public ActionResult<Product> AddProduct([FromBody]ProductDTO product)
+        {
+            var newProduct = new Product()
+            {
+                Name = product.Name,
+                Description = product.Description,
+                Price = product.Price,
+                Quantity = product.Quantity,
+            };
+
+            return Ok(_productService.AddProduct(newProduct));
         }
     }
 }

@@ -16,7 +16,21 @@ namespace TechnoMarket.Domain.Entities
 
         public string Name { get; set; }
 
+        public string Description { get; set; }
+
         public decimal Price { get; set; }
+
+        public bool Status { get; set; } = true;
+
+        //public ICollection<string> Images { get; set; }
+
+        public decimal Rating { get; set; } = 0;
+
+        public int Quantity { get; set; }
+
+        public bool Offer { get; set; } = false;
+
+        public decimal Discount { get; set; } = 0;
 
         public Store Store {  get; set; }
 

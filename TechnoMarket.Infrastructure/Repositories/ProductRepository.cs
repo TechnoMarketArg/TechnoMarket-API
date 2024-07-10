@@ -27,5 +27,11 @@ namespace TechnoMarket.Infrastructure.Repositories
             return _context.Products.FirstOrDefault(p => p.Id == id);
         }
 
+        public Product AddProduct(Product product)
+        {
+            _context.Products.Add(product);
+            return product;
+        }
+
     }
 }

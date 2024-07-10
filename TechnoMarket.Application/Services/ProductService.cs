@@ -26,5 +26,10 @@ namespace TechnoMarket.Application.Services
         {
             return _productRepository.GetById(id);
         }
+
+        public Product AddProduct(Product product)
+        {
+            return _productRepository.AddProduct(product);
+        }
     }
 }
