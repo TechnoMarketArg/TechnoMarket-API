@@ -50,5 +50,17 @@ namespace TechnoMarket.Controllers
 
             return Ok(_productService.AddProduct(newProduct));
         }
+
+        [HttpDelete("Delete")]
+        public ActionResult<Product> DeleteProduct([FromQuery]Guid id)
+        {
+            return Ok(_productService.DeleteProduct(id));
+        }
+
+        [HttpPut("")]
+        public void UpdateProduct(Product product)
+        {
+
+        }
     }
 }

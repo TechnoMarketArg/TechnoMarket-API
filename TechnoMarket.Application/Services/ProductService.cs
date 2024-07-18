@@ -31,5 +31,15 @@ namespace TechnoMarket.Application.Services
         {
             return _productRepository.AddProduct(product);
         }
+
+        public Product? DeleteProduct(Guid id)
+        {
+            return _productRepository.DeleteProduct(id);
+        }
+
+        public void UpdateProduct(Product product)
+        {
+            _productRepository.UpdateProduct(product);
+        }
     }
 }

@@ -12,5 +12,7 @@ namespace TechnoMarket.Domain.Interfaces
         public List<Product?> GetAll();
         public Product? GetById(Guid id);
         public Product AddProduct(Product product);
+        public Product? DeleteProduct(Guid id);
+        public void UpdateProduct(Product product);
     }
 }

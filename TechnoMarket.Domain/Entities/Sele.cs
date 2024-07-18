@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace TechnoMarket.Domain.Entities
 {
-    public class Role
+    public class Sale
     {
-        public int Id { get; set; } //0 = Super-admin - 1 = Admin - 2 = Seller - 3 = Customer
-        public string Name { get; set; }
-
+        public Guid Id { get; set; }
+        public ICollection<Product> Products { get; set; }
+        public Buyer Buyer { get; set; }
     }
+
 }

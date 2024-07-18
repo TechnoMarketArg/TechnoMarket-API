@@ -15,9 +15,17 @@ namespace TechnoMarket.Domain.Entities
 
         public string Name { get; set; }
 
+        public string Description { get; set; }
+
         public decimal Rating { get; set; } = decimal.Zero;
 
-        public ICollection<Product>? Inventory { get; set; }
+        public ICollection<Product>? Inventory { get; set; } = new List<Product>();
+
+        public ICollection<Sale> Sales { get; set; } = new List<Sale>();
+
+        public Guid idOwner { get; }
+
+        public virtual User Owner { get; set; }
 
         public Store() { }
     }

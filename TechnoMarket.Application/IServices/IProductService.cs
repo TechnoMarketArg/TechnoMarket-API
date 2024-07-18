@@ -16,5 +16,8 @@ namespace TechnoMarket.Application.IServices
 
         public Product AddProduct(Product product);
 
+        public Product? DeleteProduct(Guid id);
+        public void UpdateProduct(Product product);
+
     }
 }

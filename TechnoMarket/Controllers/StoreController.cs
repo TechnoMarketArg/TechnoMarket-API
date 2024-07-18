@@ -1,7 +1,10 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 using TechnoMarket.Application.IServices;
 using TechnoMarket.Application.Services;
+using TechnoMarket.Domain.DTOs;
 using TechnoMarket.Domain.Entities;
 
 namespace TechnoMarket.Controllers
@@ -11,9 +14,11 @@ namespace TechnoMarket.Controllers
     public class StoreController : ControllerBase
     {
         private readonly IStoreService _storeService;
-        public StoreController(IStoreService storeService)
+        private readonly IUserService _userService;
+        public StoreController(IStoreService storeService, IUserService userService)
         {
             _storeService = storeService;
+            _userService = userService;
         }
 
         [HttpGet]
@@ -26,6 +31,53 @@ namespace TechnoMarket.Controllers
         public IActionResult GetStoreWithProducts()
         {
             return Ok(_storeService.GetStoreWithProducts());
+        }
+
+        [HttpPost]
+        [Authorize(Roles = "Customer")]
+        public IActionResult CreateStore([FromBody] CreateStoreDTO createStoreDTO)
+        {
+            var userIdClaim = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier)?.Value;
+            if (string.IsNullOrEmpty(userIdClaim))
+            {
+                return BadRequest("User ID claim not found.");
+            }
+
+            var userId = Guid.Parse(userIdClaim);
+
+            var user = _userService.GetById(userId);
+            if (user == null)
+            {
+                return NotFound("User not found");
+            }
+
+            if (user.Role != UserRole.Customer)
+            {
+                return BadRequest("Only customer can create store");
+            }
+
+            var store = new Store
+            {
+                Name = createStoreDTO.Name,
+                Description = createStoreDTO.Description,
+                Owner = user
+            };
+
+            _storeService.CreateStore(store);
+
+            UserModel userModel = new UserModel
+            {
+                Id = user.Id,
+                Email = user.Email,
+                Password = user.Password,
+                FirstName = user.FirstName,
+                LastName = user.LastName,
+                Role = UserRole.Seller
+            };
+
+            _userService.Update(userModel);
+
+            return Ok("Store created successfully");
         }
     }
 }

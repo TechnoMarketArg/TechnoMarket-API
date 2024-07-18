@@ -137,3 +137,13 @@ C:\Users\sebas\OneDrive\Escritorio\TechnoMarket\TechnoMarket-API\TechnoMarket\bi
 C:\Users\sebas\OneDrive\Escritorio\TechnoMarket\TechnoMarket-API\TechnoMarket\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\sebas\OneDrive\Escritorio\TechnoMarket\TechnoMarket-API\TechnoMarket\bin\Debug\net8.0\Castle.Core.dll
 C:\Users\sebas\OneDrive\Escritorio\TechnoMarket\TechnoMarket-API\TechnoMarket\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Proxies.dll
+C:\Users\sebas\OneDrive\Escritorio\TechnoMarket\TechnoMarket-API\TechnoMarket\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\sebas\OneDrive\Escritorio\TechnoMarket\TechnoMarket-API\TechnoMarket\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\sebas\OneDrive\Escritorio\TechnoMarket\TechnoMarket-API\TechnoMarket\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\sebas\OneDrive\Escritorio\TechnoMarket\TechnoMarket-API\TechnoMarket\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\sebas\OneDrive\Escritorio\TechnoMarket\TechnoMarket-API\TechnoMarket\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\sebas\OneDrive\Escritorio\TechnoMarket\TechnoMarket-API\TechnoMarket\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\sebas\OneDrive\Escritorio\TechnoMarket\TechnoMarket-API\TechnoMarket\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\sebas\OneDrive\Escritorio\TechnoMarket\TechnoMarket-API\TechnoMarket\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\sebas\OneDrive\Escritorio\TechnoMarket\TechnoMarket-API\TechnoMarket\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\sebas\OneDrive\Escritorio\TechnoMarket\TechnoMarket-API\TechnoMarket\bin\Debug\net8.0\Microsoft.AspNet.Identity.Core.dll

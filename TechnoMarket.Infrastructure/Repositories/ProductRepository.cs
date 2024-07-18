@@ -33,5 +33,24 @@ namespace TechnoMarket.Infrastructure.Repositories
             return product;
         }
 
+        public Product? DeleteProduct(Guid id)
+        {
+            var product = _context.Products.FirstOrDefault(p =>p.Id == id);
+
+            if (product != null)
+            {
+                _context.Products.Remove(product);
+                _context.SaveChanges();
+            }
+
+            return product;
+        }
+
+        public void UpdateProduct(Product product)
+        {
+            _context.Products.Update(product);
+            _context.SaveChanges();
+        }
+
     }
 }

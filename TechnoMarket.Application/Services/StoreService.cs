@@ -18,6 +18,11 @@ namespace TechnoMarket.Application.Services
             _storeRepository = storeRepository;
         }
 
+        public void CreateStore(Store store)
+        {
+            _storeRepository.CreateStore(store);
+        }
+
         public List<Store> GetStores()
         {
             return _storeRepository.GetStores();

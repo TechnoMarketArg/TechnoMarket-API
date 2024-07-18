@@ -15,40 +15,37 @@ namespace TechnoMarket.Domain.Entities
     {
 
         [Key]
-        //[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public Guid Id { get; set; }
-
-        public string FirstName { get; set; }
-
 
         [Unique]
         [EmailAddress]
         public string Email { get; set; }
 
-        /* public string Password { get; set; }
-         public string LastName { get; set; }
+        public string Password { get; set; }
 
-         public bool Active { get; set; } = true;
+        public string FirstName { get; set; }
 
-         public string Address { get; set; }
+        public string LastName { get; set; }
 
-         public string City { get; set; }
+        public bool Active { get; set; } = true;
 
-         public string Region { get; set; }
+        public UserRole Role { get; set; }
 
-         public string PostalCode { get; set; }*/
-
-       /* public int RoleId { get; set; } = 3;
-
-        public virtual Role Role { get; set; }
-
-       /* public virtual Store? Store { get; set; } = null;
+        public virtual Store? Store { get; set; } = null;
 
         public List<int> ProductsPurchased { get; set; } = new List<int>();
 
-        public HashSet<int> ProductsFavorites { get; set; } = new HashSet<int>();
+        public List<int> ProductsFavorites { get; set; } = new List<int>();
 
-        public HashSet<int> StoresFavotires { get; set; } = new HashSet<int>();*/
+        public List<int> StoresFavorites { get; set; } = new List<int>();
 
     }
+
+    public enum UserRole
+    {
+        Customer,
+        Seller,
+        Admin
+    }
+
 }

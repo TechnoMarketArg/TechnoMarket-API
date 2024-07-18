@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -23,31 +24,30 @@ namespace TechnoMarket.Infrastructure.Repositories
             return _context.Stores.ToList();
         }
 
-        public List<StoreWithProductsDTO> GetStoreWithProducts() 
+        public void CreateStore(Store store)
+        {
+            _context.Stores.Add(store);
+            _context.SaveChanges();
+        }
+
+
+
+        public List<StoreWithProductsDTO> GetStoreWithProducts()
         {
             return _context.Stores
-                    .Join(
-                        _context.Products,
-                        s => s.Id,
-                        p => p.Store.Id,
-                        (s, p) => new { Store = s, Product = p }
-                    )
-                    .GroupBy(
-                        sp => new { sp.Store.Id, sp.Store.Name, sp.Store.Rating },
-                        sp => sp.Product,
-                        (key, products) => new StoreWithProductsDTO
-                        {
-                            Name = key.Name,
-                            Rating = key.Rating,
-                            Inventory = products.Select(c => new ProductDTO
-                            {
-                                Name = c.Name,
-                                Price = c.Price
-
-                            }).ToList()
-                        }
-                    )
-                    .ToList();
+                .Include(s => s.Inventory)
+                .Select(s => new StoreWithProductsDTO
+                {
+                    Name = s.Name,
+                    Rating = s.Rating,
+                    Inventory = s.Inventory.Select(p => new ProductDTO
+                    {
+                        Name = p.Name,
+                        Price = p.Price
+                    }).ToList()
+                })
+                .ToList();
         }
+
     }
 }

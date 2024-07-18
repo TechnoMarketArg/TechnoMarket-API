@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,9 +17,15 @@ namespace TechnoMarket.Infrastructure.Repositories
         {
             _context = context;
         }
-        public User? Get(string name)
+
+        public User? GetByEmail(string email)
         {
-            return _context.Users.FirstOrDefault(u => u.FirstName == name);
+            var user = _context.Users.FirstOrDefault(u => u.Email == email);
+            if (user == null)
+            {
+                return null;
+            }
+            return user;
         }
 
         public List<User> Get()
@@ -44,6 +51,32 @@ namespace TechnoMarket.Infrastructure.Repositories
             }
 
             return user;
+        }
+
+        public void Update(User user)
+        {
+            if (user == null)
+            {
+                throw new ArgumentNullException(nameof(user), "El usuario no puede ser nulo.");
+            }
+
+            try
+            {
+                _context.Users.Update(user);
+                _context.SaveChanges();
+            }
+            catch (DbUpdateException ex)
+            {
+                throw new ApplicationException("Error al actualizar el usuario en la base de datos.", ex);
+            }
+        }
+
+
+        public User GetById(Guid id)
+        {
+            return _context.Users
+                .Include(u => u.Store) 
+                .FirstOrDefault(u => u.Id == id);
         }
     }
 }

@@ -11,6 +11,7 @@ namespace TechnoMarket.Domain.Interfaces
     public interface IStoreRepository
     {
         public List<Store> GetStores();
+        public void CreateStore(Store store);
         public List<StoreWithProductsDTO> GetStoreWithProducts();
     }
 }
