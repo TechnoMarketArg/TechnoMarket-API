@@ -16,7 +16,8 @@ namespace TechnoMarket.Application.IServices
         public User? DeleteUser(Guid id);
         public UserModel? CheckCredentials(CredentialsRequest credentials);
         public User GetById(Guid id);
-        public void Update(UserModel user);
+        public void Update(UserUpdateDTO user, Guid id);
         public bool VerifyPassword(Guid userId, string password);
+        public void ChangeActive(Guid id);
     }
 }

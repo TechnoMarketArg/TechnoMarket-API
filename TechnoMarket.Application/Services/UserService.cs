@@ -86,13 +86,13 @@ namespace TechnoMarket.Application.Services
             return null;
         }
 
-        public void Update(UserModel user)
+        public void Update(UserUpdateDTO user, Guid id)
         {
-            var existingUser = _repository.GetById(user.Id);
+            var existingUser = _repository.GetById(id);
 
             if (existingUser == null)
             {
-                throw new ApplicationException($"No se encontró ningún usuario con Id {user.Id}");
+                throw new ApplicationException($"No se encontró ningún usuario con Id {id}");
             }
 
             existingUser.Email = user.Email;
@@ -102,7 +102,6 @@ namespace TechnoMarket.Application.Services
             }
             existingUser.FirstName = user.FirstName;
             existingUser.LastName = user.LastName;
-            existingUser.Role = user.Role;
 
             _repository.Update(existingUser);
         }
@@ -121,6 +120,11 @@ namespace TechnoMarket.Application.Services
             }
 
             return _passwordService.VerifyPassword(password, user.Password);
+        }
+
+        public void ChangeActive(Guid id)
+        {
+            _repository.ChangeActive(id);
         }
 
     }

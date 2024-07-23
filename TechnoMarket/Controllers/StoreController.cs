@@ -60,7 +60,7 @@ namespace TechnoMarket.Controllers
             {
                 Name = createStoreDTO.Name,
                 Description = createStoreDTO.Description,
-                Owner = user
+                idOwner = user.Id,
             };
 
             _storeService.CreateStore(store);

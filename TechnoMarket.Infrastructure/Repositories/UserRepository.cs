@@ -74,9 +74,34 @@ namespace TechnoMarket.Infrastructure.Repositories
 
         public User GetById(Guid id)
         {
-            return _context.Users
-                .Include(u => u.Store) 
+            var user = _context.Users
+                .Include(u => u.Store)
                 .FirstOrDefault(u => u.Id == id);
+
+            if (user != null)
+            {
+                return user;
+            }
+            else
+            {
+                throw new Exception("Usuario no encontrado");
+            }
+
+        }
+
+        public void ChangeActive(Guid id)
+        {
+            var user = GetById(id);
+
+            if (user != null)
+            {
+                user.Active = !user.Active;
+                _context.SaveChanges();
+            }
+            else
+            {
+                throw new Exception("Usuario no encontrado");
+            }
         }
     }
 }

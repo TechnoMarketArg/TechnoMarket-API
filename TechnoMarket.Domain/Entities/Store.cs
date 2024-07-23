@@ -23,7 +23,7 @@ namespace TechnoMarket.Domain.Entities
 
         public ICollection<Sale> Sales { get; set; } = new List<Sale>();
 
-        public Guid idOwner { get; }
+        public Guid idOwner { get; set; }
 
         public virtual User Owner { get; set; }
 

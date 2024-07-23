@@ -23,7 +23,7 @@ namespace TechnoMarket.Application.Services
             _storeRepository.CreateStore(store);
         }
 
-        public List<Store> GetStores()
+        public List<StoreDTO> GetStores()
         {
             return _storeRepository.GetStores();
         }

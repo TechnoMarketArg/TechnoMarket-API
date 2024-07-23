@@ -176,6 +176,9 @@ namespace TechnoMarket.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
+                    b.Property<Guid?>("StoreId")
+                        .HasColumnType("TEXT");
+
                     b.Property<string>("StoresFavorites")
                         .IsRequired()
                         .HasColumnType("TEXT");

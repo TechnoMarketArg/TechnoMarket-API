@@ -10,7 +10,7 @@ namespace TechnoMarket.Application.IServices
 {
     public interface IStoreService
     {
-        public List<Store> GetStores();
+        public List<StoreDTO> GetStores();
         public void CreateStore(Store store);
         public List<StoreWithProductsDTO> GetStoreWithProducts();
     }

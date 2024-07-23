@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Security.Claims;
 using TechnoMarket.Application.IServices;
 using TechnoMarket.Application.Services;
@@ -25,12 +26,14 @@ namespace TechnoMarket.Controllers
 
 
         [HttpGet("{email}")]
+        [Authorize(Roles = "Admin")]
         public IActionResult Get([FromRoute]string email)
         {
             return Ok(_userService.GetByEmail(email));
         }
 
         [HttpGet("All")]
+        [Authorize(Roles = "Admin")]
         public IActionResult Get()
         {
             return Ok(_userService.Get());
@@ -44,32 +47,16 @@ namespace TechnoMarket.Controllers
         }
 
         [HttpDelete]
+        [Authorize(Roles = "Admin")]
         public IActionResult DeleteUser([FromQuery] Guid id)
         {
             return Ok(_userService.DeleteUser(id));
         }
 
-        [HttpPut]
-        public IActionResult UpdateEmail(string email)
-        {
-            Guid userId = Guid.Parse(User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier)?.Value ?? string.Empty);//NameIdentifier = sub = Id
-            var user = _userService.GetById(userId);
-            UserModel userModel = new UserModel
-            {
-                Id = user.Id,
-                Email = user.Email,
-                Password = user.Password, // Asegúrate de manejar las contraseñas de manera segura
-                FirstName = user.FirstName,
-                LastName = user.LastName,
-                Role = user.Role
-            };
-            _userService.Update(userModel);
-            return Ok();
-        }
 
         [HttpPost("update")]
         [Authorize]
-        public IActionResult Update([FromBody] UserModel userModel)
+        public IActionResult Update([FromBody] UserUpdateDTO userUpdateDTO)
         {
             var userIdClaim = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier)?.Value;
             if (string.IsNullOrEmpty(userIdClaim))
@@ -78,8 +65,7 @@ namespace TechnoMarket.Controllers
             }
 
             var userId = Guid.Parse(userIdClaim);
-            userModel.Id = userId;
-            _userService.Update(userModel);
+            _userService.Update(userUpdateDTO, userId);
             return Ok("User updated successfully");
         }
 
@@ -98,6 +84,31 @@ namespace TechnoMarket.Controllers
             return Ok(isValid);
         }
 
+        [HttpPut("ChangeActive")]
+        [Authorize(Roles = "Admin")]
+        public IActionResult ChangeActive([FromQuery] string id)
+        {
+            var idGuid = Guid.Parse(id);
+
+            _userService.ChangeActive(idGuid);
+            return Ok();
+        }
+
+        [HttpPut("DeactivateSelf")]
+        [Authorize]
+        public IActionResult DeactivateSelf()
+        {
+            var userIdClaim = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier)?.Value;
+            if (string.IsNullOrEmpty(userIdClaim))
+            {
+                return BadRequest("User ID claim not found.");
+            }
+
+            var idGuid = Guid.Parse(userIdClaim);
+
+            _userService.ChangeActive(idGuid);
+            return Ok();
+        }
 
     }
 }

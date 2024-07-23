@@ -20,6 +20,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 //inicializacion de los servicios de los controllers
 
+
 #region Repositories
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
@@ -36,6 +37,9 @@ builder.Services.AddScoped<IStoreService, StoreService>();
 builder.Services.AddAuthorization(options =>
 {
     options.AddPolicy("RequireCustomerRole", policy => policy.RequireRole("Customer"));
+    options.AddPolicy("RequireCustomerRole", policy => policy.RequireRole("Seller"));
+    options.AddPolicy("RequireCustomerRole", policy => policy.RequireRole("Admin"));
+    options.AddPolicy("RequireCustomerRole", policy => policy.RequireRole("Super-Admin"));
 });
 
 builder.Services.AddAuthentication("Bearer") //"Bearer" es el tipo de auntenticación que tenemos que elegir después en PostMan para pasarle el token

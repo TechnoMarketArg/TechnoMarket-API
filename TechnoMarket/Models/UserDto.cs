@@ -1,4 +1,6 @@
-﻿namespace TechnoMarket.Models
+﻿using TechnoMarket.Domain.DTOs;
+
+namespace TechnoMarket.Models
 {
     public class UserDto
     {
@@ -9,5 +11,7 @@
         public string FirstName { get; set; }
 
         public string LastName { get; set; }
+
+        public StoreDTO Store { get; set; }
     }
 }

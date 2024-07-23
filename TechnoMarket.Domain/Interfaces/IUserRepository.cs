@@ -15,5 +15,6 @@ namespace TechnoMarket.Domain.Interfaces
         User? DeleteUser(Guid id);
         public void Update(User user);
         public User GetById(Guid id);
+        public void ChangeActive(Guid id);
     }
 }

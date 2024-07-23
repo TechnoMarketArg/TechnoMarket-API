@@ -32,12 +32,6 @@ namespace TechnoMarket.Infrastructure
             modelBuilder.Entity<Product>()
                 .HasKey(p => p.Id); // Define la clave primaria para Product
 
-            // Configuración para la entidad User
-            /*modelBuilder.Entity<User>()
-                .HasOne(u => u.Role)    // Establece la relación uno a muchos con Role
-                .WithMany()             // Sin propiedad de navegación de colección en Role
-                .HasForeignKey(u => u.RoleId); // Define la clave foránea en User que apunta a Role*/
-
             /*modelBuilder.Entity<Store>()
                 .HasMany(s => s.Inventory) //una tienda tiene muchos productos
                 .WithOne(p => p.Store) //un producto viene de una tieda

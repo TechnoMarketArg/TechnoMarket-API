@@ -19,9 +19,23 @@ namespace TechnoMarket.Infrastructure.Repositories
             _context = context;
         }
 
-        public List<Store> GetStores()
+        public List<StoreDTO> GetStores()
         {
-            return _context.Stores.ToList();
+                return _context.Stores
+            .Include(s => s.Owner)
+            .Select(s => new StoreDTO
+            {
+                Id = s.Id,
+                Name = s.Name,
+                Description = s.Description,
+                Owner = new OwnerDTO
+                {
+                    Id = s.Owner.Id,
+                    Email = s.Owner.Email,
+                    FirstName = s.Owner.FirstName,
+                    LastName = s.Owner.LastName
+                }
+            }).ToList();
         }
 
         public void CreateStore(Store store)

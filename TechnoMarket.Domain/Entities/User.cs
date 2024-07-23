@@ -31,7 +31,9 @@ namespace TechnoMarket.Domain.Entities
 
         public UserRole Role { get; set; }
 
-        public virtual Store? Store { get; set; } = null;
+        public Guid? StoreId { get; set; } = Guid.Empty;
+
+        public Store? Store { get; set; } = null;
 
         public List<int> ProductsPurchased { get; set; } = new List<int>();
 
@@ -45,7 +47,8 @@ namespace TechnoMarket.Domain.Entities
     {
         Customer,
         Seller,
-        Admin
+        Admin,
+        Super-Admin
     }
 
 }
