@@ -9,6 +9,12 @@ namespace TechnoMarket.Domain.Interfaces
 {
     public interface IUserRepository
     {
-        User? Get(string name);
+        User? GetByEmail(string name);
+        List<User> Get();
+        User AddUser(User user);
+        User? DeleteUser(Guid id);
+        public void Update(User user);
+        public User GetById(Guid id);
+        public void ChangeActive(Guid id);
     }
 }

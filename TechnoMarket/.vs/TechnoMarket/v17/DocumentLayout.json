@@ -3,41 +3,136 @@
   "WorkspaceRootPath": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3469C311-74A6-4DDB-9DD0-4A70564D312E}|TechnoMarket.csproj|c:\\users\\augus\\desktop\\tpiapi_prog3\\technomarket-api\\technomarket\\controllers\\storecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3469C311-74A6-4DDB-9DD0-4A70564D312E}|TechnoMarket.csproj|solutionrelative:controllers\\storecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C97BBA7-2F52-4DB7-B5F1-01E689A17708}|..\\TechnoMarket.Domain\\TechnoMarket.Domain.csproj|c:\\users\\augus\\desktop\\tpiapi_prog3\\technomarket-api\\technomarket.domain\\dtos\\userupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66002AF5-1D27-48AF-AA79-1AD60AE567FA}|..\\TechnoMarket.Application\\TechnoMarket.Application.csproj|c:\\users\\augus\\desktop\\tpiapi_prog3\\technomarket-api\\technomarket.application\\iservices\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C97BBA7-2F52-4DB7-B5F1-01E689A17708}|..\\TechnoMarket.Domain\\TechnoMarket.Domain.csproj|c:\\users\\augus\\desktop\\tpiapi_prog3\\technomarket-api\\technomarket.domain\\dtos\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C97BBA7-2F52-4DB7-B5F1-01E689A17708}|..\\TechnoMarket.Domain\\TechnoMarket.Domain.csproj|c:\\users\\augus\\desktop\\tpiapi_prog3\\technomarket-api\\technomarket.domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3469C311-74A6-4DDB-9DD0-4A70564D312E}|TechnoMarket.csproj|c:\\users\\augus\\desktop\\tpiapi_prog3\\technomarket-api\\technomarket\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3469C311-74A6-4DDB-9DD0-4A70564D312E}|TechnoMarket.csproj|solutionrelative:controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3469C311-74A6-4DDB-9DD0-4A70564D312E}|TechnoMarket.csproj|c:\\users\\augus\\desktop\\tpiapi_prog3\\technomarket-api\\technomarket\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3469C311-74A6-4DDB-9DD0-4A70564D312E}|TechnoMarket.csproj|solutionrelative:controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10C51D26-3C74-40C6-B75E-4CFCDB9342A1}|..\\TechnoMarket.Infrastructure\\TechnoMarket.Infrastructure.csproj|c:\\users\\augus\\desktop\\tpiapi_prog3\\technomarket-api\\technomarket.infrastructure\\repositories\\storerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10C51D26-3C74-40C6-B75E-4CFCDB9342A1}|..\\TechnoMarket.Infrastructure\\TechnoMarket.Infrastructure.csproj|c:\\users\\augus\\desktop\\tpiapi_prog3\\technomarket-api\\technomarket.infrastructure\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10C51D26-3C74-40C6-B75E-4CFCDB9342A1}|..\\TechnoMarket.Infrastructure\\TechnoMarket.Infrastructure.csproj|c:\\users\\augus\\desktop\\tpiapi_prog3\\technomarket-api\\technomarket.infrastructure\\repositories\\productrepository,cs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3C97BBA7-2F52-4DB7-B5F1-01E689A17708}|..\\TechnoMarket.Domain\\TechnoMarket.Domain.csproj|c:\\users\\augus\\desktop\\tpiapi_prog3\\technomarket-api\\technomarket.domain\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{3C97BBA7-2F52-4DB7-B5F1-01E689A17708}|..\\TechnoMarket.Domain\\TechnoMarket.Domain.csproj|c:\\users\\augus\\desktop\\tpiapi_prog3\\technomarket-api\\technomarket.domain\\interfaces\\istorerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C97BBA7-2F52-4DB7-B5F1-01E689A17708}|..\\TechnoMarket.Domain\\TechnoMarket.Domain.csproj|c:\\users\\augus\\desktop\\tpiapi_prog3\\technomarket-api\\technomarket.domain\\interfaces\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C97BBA7-2F52-4DB7-B5F1-01E689A17708}|..\\TechnoMarket.Domain\\TechnoMarket.Domain.csproj|c:\\users\\augus\\desktop\\tpiapi_prog3\\technomarket-api\\technomarket.domain\\entities\\buyer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C97BBA7-2F52-4DB7-B5F1-01E689A17708}|..\\TechnoMarket.Domain\\TechnoMarket.Domain.csproj|c:\\users\\augus\\desktop\\tpiapi_prog3\\technomarket-api\\technomarket.domain\\dtos\\credentialsrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C97BBA7-2F52-4DB7-B5F1-01E689A17708}|..\\TechnoMarket.Domain\\TechnoMarket.Domain.csproj|c:\\users\\augus\\desktop\\tpiapi_prog3\\technomarket-api\\technomarket.domain\\dtos\\createstoredto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{66002AF5-1D27-48AF-AA79-1AD60AE567FA}|..\\TechnoMarket.Application\\TechnoMarket.Application.csproj|c:\\users\\augus\\desktop\\tpiapi_prog3\\technomarket-api\\technomarket.application\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66002AF5-1D27-48AF-AA79-1AD60AE567FA}|..\\TechnoMarket.Application\\TechnoMarket.Application.csproj|c:\\users\\augus\\desktop\\tpiapi_prog3\\technomarket-api\\technomarket.application\\services\\storeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66002AF5-1D27-48AF-AA79-1AD60AE567FA}|..\\TechnoMarket.Application\\TechnoMarket.Application.csproj|c:\\users\\augus\\desktop\\tpiapi_prog3\\technomarket-api\\technomarket.application\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66002AF5-1D27-48AF-AA79-1AD60AE567FA}|..\\TechnoMarket.Application\\TechnoMarket.Application.csproj|c:\\users\\augus\\desktop\\tpiapi_prog3\\technomarket-api\\technomarket.application\\services\\passwordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66002AF5-1D27-48AF-AA79-1AD60AE567FA}|..\\TechnoMarket.Application\\TechnoMarket.Application.csproj|c:\\users\\augus\\desktop\\tpiapi_prog3\\technomarket-api\\technomarket.application\\iservices\\istoreservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66002AF5-1D27-48AF-AA79-1AD60AE567FA}|..\\TechnoMarket.Application\\TechnoMarket.Application.csproj|c:\\users\\augus\\desktop\\tpiapi_prog3\\technomarket-api\\technomarket.application\\iservices\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3469C311-74A6-4DDB-9DD0-4A70564D312E}|TechnoMarket.csproj|c:\\users\\augus\\desktop\\tpiapi_prog3\\technomarket-api\\technomarket\\models\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3469C311-74A6-4DDB-9DD0-4A70564D312E}|TechnoMarket.csproj|solutionrelative:models\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3469C311-74A6-4DDB-9DD0-4A70564D312E}|TechnoMarket.csproj|c:\\users\\augus\\desktop\\tpiapi_prog3\\technomarket-api\\technomarket\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3469C311-74A6-4DDB-9DD0-4A70564D312E}|TechnoMarket.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10C51D26-3C74-40C6-B75E-4CFCDB9342A1}|..\\TechnoMarket.Infrastructure\\TechnoMarket.Infrastructure.csproj|c:\\users\\augus\\desktop\\tpiapi_prog3\\technomarket-api\\technomarket.infrastructure\\applicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C97BBA7-2F52-4DB7-B5F1-01E689A17708}|..\\TechnoMarket.Domain\\TechnoMarket.Domain.csproj|c:\\users\\augus\\desktop\\tpiapi_prog3\\technomarket-api\\technomarket.domain\\dtos\\usercreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C97BBA7-2F52-4DB7-B5F1-01E689A17708}|..\\TechnoMarket.Domain\\TechnoMarket.Domain.csproj|c:\\users\\augus\\desktop\\tpiapi_prog3\\technomarket-api\\technomarket.domain\\dtos\\storewithproductsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C97BBA7-2F52-4DB7-B5F1-01E689A17708}|..\\TechnoMarket.Domain\\TechnoMarket.Domain.csproj|c:\\users\\augus\\desktop\\tpiapi_prog3\\technomarket-api\\technomarket.domain\\dtos\\storedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C97BBA7-2F52-4DB7-B5F1-01E689A17708}|..\\TechnoMarket.Domain\\TechnoMarket.Domain.csproj|c:\\users\\augus\\desktop\\tpiapi_prog3\\technomarket-api\\technomarket.domain\\dtos\\productupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C97BBA7-2F52-4DB7-B5F1-01E689A17708}|..\\TechnoMarket.Domain\\TechnoMarket.Domain.csproj|c:\\users\\augus\\desktop\\tpiapi_prog3\\technomarket-api\\technomarket.domain\\dtos\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C97BBA7-2F52-4DB7-B5F1-01E689A17708}|..\\TechnoMarket.Domain\\TechnoMarket.Domain.csproj|c:\\users\\augus\\desktop\\tpiapi_prog3\\technomarket-api\\technomarket.domain\\dtos\\passwordverificationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C97BBA7-2F52-4DB7-B5F1-01E689A17708}|..\\TechnoMarket.Domain\\TechnoMarket.Domain.csproj|c:\\users\\augus\\desktop\\tpiapi_prog3\\technomarket-api\\technomarket.domain\\dtos\\ownerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C97BBA7-2F52-4DB7-B5F1-01E689A17708}|..\\TechnoMarket.Domain\\TechnoMarket.Domain.csproj|c:\\users\\augus\\desktop\\tpiapi_prog3\\technomarket-api\\technomarket.domain\\entities\\sale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C97BBA7-2F52-4DB7-B5F1-01E689A17708}|..\\TechnoMarket.Domain\\TechnoMarket.Domain.csproj|c:\\users\\augus\\desktop\\tpiapi_prog3\\technomarket-api\\technomarket.domain\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C97BBA7-2F52-4DB7-B5F1-01E689A17708}|..\\TechnoMarket.Domain\\TechnoMarket.Domain.csproj|c:\\users\\augus\\desktop\\tpiapi_prog3\\technomarket-api\\technomarket.domain\\entities\\store.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3469C311-74A6-4DDB-9DD0-4A70564D312E}|TechnoMarket.csproj|c:\\users\\augus\\desktop\\tpiapi_prog3\\technomarket-api\\technomarket\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3469C311-74A6-4DDB-9DD0-4A70564D312E}|TechnoMarket.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{10C51D26-3C74-40C6-B75E-4CFCDB9342A1}|..\\TechnoMarket.Infrastructure\\TechnoMarket.Infrastructure.csproj|c:\\users\\augus\\desktop\\tpiapi_prog3\\technomarket-api\\technomarket.infrastructure\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3469C311-74A6-4DDB-9DD0-4A70564D312E}|TechnoMarket.csproj|c:\\users\\augus\\desktop\\tpiapi_prog3\\technomarket-api\\technomarket\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3469C311-74A6-4DDB-9DD0-4A70564D312E}|TechnoMarket.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\tadeo\\OneDrive\\Escritorio\\Programas cufa\\tpiP3\\TechnoMarket-API\\TechnoMarket.Infrastructure\\Repositories\\UserRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket\\Migrations\\20240524224256_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20240524224256_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C97BBA7-2F52-4DB7-B5F1-01E689A17708}|..\\TechnoMarket.Domain\\TechnoMarket.Domain.csproj|c:\\users\\augus\\desktop\\tpiapi_prog3\\technomarket-api\\technomarket.domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\tadeo\\OneDrive\\Escritorio\\Programas cufa\\tpiP3\\TechnoMarket-API\\TechnoMarket.Infrastructure\\ApplicationContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3469C311-74A6-4DDB-9DD0-4A70564D312E}|TechnoMarket.csproj|c:\\users\\augus\\desktop\\tpiapi_prog3\\technomarket-api\\technomarket\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{3469C311-74A6-4DDB-9DD0-4A70564D312E}|TechnoMarket.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{10C51D26-3C74-40C6-B75E-4CFCDB9342A1}|..\\TechnoMarket.Infrastructure\\TechnoMarket.Infrastructure.csproj|c:\\users\\augus\\desktop\\tpiapi_prog3\\technomarket-api\\technomarket.infrastructure\\applicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3469C311-74A6-4DDB-9DD0-4A70564D312E}|TechnoMarket.csproj|c:\\users\\augus\\desktop\\tpiapi_prog3\\technomarket-api\\technomarket\\technomarket.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{3469C311-74A6-4DDB-9DD0-4A70564D312E}|TechnoMarket.csproj|solutionrelative:technomarket.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3469C311-74A6-4DDB-9DD0-4A70564D312E}|TechnoMarket.csproj|c:\\users\\augus\\desktop\\tpiapi_prog3\\technomarket-api\\technomarket\\migrations\\20240524224256_initialmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3469C311-74A6-4DDB-9DD0-4A70564D312E}|TechnoMarket.csproj|solutionrelative:migrations\\20240524224256_initialmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -47,116 +142,506 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Application\\Services\\UserService.cs",
-              "RelativeDocumentMoniker": "..\\TechnoMarket.Application\\Services\\UserService.cs",
-              "ToolTip": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Application\\Services\\UserService.cs",
-              "RelativeToolTip": "..\\TechnoMarket.Application\\Services\\UserService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAlAAAA",
+              "DocumentIndex": 7,
+              "Title": "StoreRepository.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Infrastructure\\Repositories\\StoreRepository.cs",
+              "RelativeDocumentMoniker": "..\\TechnoMarket.Infrastructure\\Repositories\\StoreRepository.cs",
+              "ToolTip": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Infrastructure\\Repositories\\StoreRepository.cs",
+              "RelativeToolTip": "..\\TechnoMarket.Infrastructure\\Repositories\\StoreRepository.cs",
+              "ViewState": "AQIAAD0AAAAAAAAAAAAkwCUAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T23:06:12.332Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Infrastructure\\Repositories\\UserRepository.cs",
-              "RelativeDocumentMoniker": "..\\TechnoMarket.Infrastructure\\Repositories\\UserRepository.cs",
-              "ToolTip": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Infrastructure\\Repositories\\UserRepository.cs",
-              "RelativeToolTip": "..\\TechnoMarket.Infrastructure\\Repositories\\UserRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAxAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T23:01:30.109Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "IUserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Domain\\Interfaces\\IUserRepository.cs",
-              "RelativeDocumentMoniker": "..\\TechnoMarket.Domain\\Interfaces\\IUserRepository.cs",
-              "ToolTip": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Domain\\Interfaces\\IUserRepository.cs",
-              "RelativeToolTip": "..\\TechnoMarket.Domain\\Interfaces\\IUserRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T23:00:47.061Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "20240524224256_InitialMigration.cs",
-              "DocumentMoniker": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket\\Migrations\\20240524224256_InitialMigration.cs",
-              "RelativeDocumentMoniker": "Migrations\\20240524224256_InitialMigration.cs",
-              "ToolTip": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket\\Migrations\\20240524224256_InitialMigration.cs",
-              "RelativeToolTip": "Migrations\\20240524224256_InitialMigration.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABYAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T22:42:56.678Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ApplicationContext.cs",
-              "DocumentMoniker": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Infrastructure\\ApplicationContext.cs",
-              "RelativeDocumentMoniker": "..\\TechnoMarket.Infrastructure\\ApplicationContext.cs",
-              "ToolTip": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Infrastructure\\ApplicationContext.cs",
-              "RelativeToolTip": "..\\TechnoMarket.Infrastructure\\ApplicationContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T22:32:13.554Z",
+              "WhenOpened": "2024-07-23T03:23:06.521Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "AuthenticationController.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket\\Controllers\\AuthenticationController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthenticationController.cs",
+              "ToolTip": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket\\Controllers\\AuthenticationController.cs",
+              "RelativeToolTip": "Controllers\\AuthenticationController.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAYwCUAAABlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T02:50:57.874Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "Controllers\\ProductController.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAgwEEAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T02:52:38.463Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StoreController.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket\\Controllers\\StoreController.cs",
+              "RelativeDocumentMoniker": "Controllers\\StoreController.cs",
+              "ToolTip": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket\\Controllers\\StoreController.cs",
+              "RelativeToolTip": "Controllers\\StoreController.cs",
+              "ViewState": "AQIAADoAAAAAAAAAAAASwFIAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T02:54:21.017Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Domain\\Entities\\User.cs",
               "RelativeDocumentMoniker": "..\\TechnoMarket.Domain\\Entities\\User.cs",
               "ToolTip": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Domain\\Entities\\User.cs",
               "RelativeToolTip": "..\\TechnoMarket.Domain\\Entities\\User.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAABgAAAAQAAAA",
+              "ViewState": "AQIAACUAAAAAAAAAAAArwDUAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-24T22:09:19.309Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Application\\IServices\\IUserService.cs",
+              "RelativeDocumentMoniker": "..\\TechnoMarket.Application\\IServices\\IUserService.cs",
+              "ToolTip": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Application\\IServices\\IUserService.cs",
+              "RelativeToolTip": "..\\TechnoMarket.Application\\IServices\\IUserService.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAWwBIAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T03:05:10.441Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserModel.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Domain\\DTOs\\UserModel.cs",
+              "RelativeDocumentMoniker": "..\\TechnoMarket.Domain\\DTOs\\UserModel.cs",
+              "ToolTip": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Domain\\DTOs\\UserModel.cs",
+              "RelativeToolTip": "..\\TechnoMarket.Domain\\DTOs\\UserModel.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAuwB0AAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T03:20:44.815Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserUpdateDTO.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Domain\\DTOs\\UserUpdateDTO.cs",
+              "RelativeDocumentMoniker": "..\\TechnoMarket.Domain\\DTOs\\UserUpdateDTO.cs",
+              "ToolTip": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Domain\\DTOs\\UserUpdateDTO.cs",
+              "RelativeToolTip": "..\\TechnoMarket.Domain\\DTOs\\UserUpdateDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwA8AAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T03:21:21.917Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Infrastructure\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "..\\TechnoMarket.Infrastructure\\Repositories\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Infrastructure\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "..\\TechnoMarket.Infrastructure\\Repositories\\UserRepository.cs",
+              "ViewState": "AQIAAEoAAAAAAAAAAAAswGoAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T23:01:30.109Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ProductRepository,cs.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Infrastructure\\Repositories\\ProductRepository,cs.cs",
+              "RelativeDocumentMoniker": "..\\TechnoMarket.Infrastructure\\Repositories\\ProductRepository,cs.cs",
+              "ToolTip": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Infrastructure\\Repositories\\ProductRepository,cs.cs",
+              "RelativeToolTip": "..\\TechnoMarket.Infrastructure\\Repositories\\ProductRepository,cs.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T03:28:43.248Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Domain\\Interfaces\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "..\\TechnoMarket.Domain\\Interfaces\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Domain\\Interfaces\\IUserRepository.cs",
+              "RelativeToolTip": "..\\TechnoMarket.Domain\\Interfaces\\IUserRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T23:00:47.061Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IStoreRepository.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Domain\\Interfaces\\IStoreRepository.cs",
+              "RelativeDocumentMoniker": "..\\TechnoMarket.Domain\\Interfaces\\IStoreRepository.cs",
+              "ToolTip": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Domain\\Interfaces\\IStoreRepository.cs",
+              "RelativeToolTip": "..\\TechnoMarket.Domain\\Interfaces\\IStoreRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T03:12:42.11Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IProductRepository.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Domain\\Interfaces\\IProductRepository.cs",
+              "RelativeDocumentMoniker": "..\\TechnoMarket.Domain\\Interfaces\\IProductRepository.cs",
+              "ToolTip": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Domain\\Interfaces\\IProductRepository.cs",
+              "RelativeToolTip": "..\\TechnoMarket.Domain\\Interfaces\\IProductRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T03:13:34.055Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Buyer.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Domain\\Entities\\Buyer.cs",
+              "RelativeDocumentMoniker": "..\\TechnoMarket.Domain\\Entities\\Buyer.cs",
+              "ToolTip": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Domain\\Entities\\Buyer.cs",
+              "RelativeToolTip": "..\\TechnoMarket.Domain\\Entities\\Buyer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T03:10:51.748Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CredentialsRequest.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Domain\\DTOs\\CredentialsRequest.cs",
+              "RelativeDocumentMoniker": "..\\TechnoMarket.Domain\\DTOs\\CredentialsRequest.cs",
+              "ToolTip": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Domain\\DTOs\\CredentialsRequest.cs",
+              "RelativeToolTip": "..\\TechnoMarket.Domain\\DTOs\\CredentialsRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T03:15:52.082Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CreateStoreDTO.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Domain\\DTOs\\CreateStoreDTO.cs",
+              "RelativeDocumentMoniker": "..\\TechnoMarket.Domain\\DTOs\\CreateStoreDTO.cs",
+              "ToolTip": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Domain\\DTOs\\CreateStoreDTO.cs",
+              "RelativeToolTip": "..\\TechnoMarket.Domain\\DTOs\\CreateStoreDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T03:15:07.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Application\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "..\\TechnoMarket.Application\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Application\\Services\\UserService.cs",
+              "RelativeToolTip": "..\\TechnoMarket.Application\\Services\\UserService.cs",
+              "ViewState": "AQIAAGcAAAAAAAAAAAAwwIIAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T23:06:12.332Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "StoreService.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Application\\Services\\StoreService.cs",
+              "RelativeDocumentMoniker": "..\\TechnoMarket.Application\\Services\\StoreService.cs",
+              "ToolTip": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Application\\Services\\StoreService.cs",
+              "RelativeToolTip": "..\\TechnoMarket.Application\\Services\\StoreService.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAzwCQAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T03:02:23.647Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Application\\Services\\ProductService.cs",
+              "RelativeDocumentMoniker": "..\\TechnoMarket.Application\\Services\\ProductService.cs",
+              "ToolTip": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Application\\Services\\ProductService.cs",
+              "RelativeToolTip": "..\\TechnoMarket.Application\\Services\\ProductService.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAzwCwAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T03:03:05.322Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "PasswordService.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Application\\Services\\PasswordService.cs",
+              "RelativeDocumentMoniker": "..\\TechnoMarket.Application\\Services\\PasswordService.cs",
+              "ToolTip": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Application\\Services\\PasswordService.cs",
+              "RelativeToolTip": "..\\TechnoMarket.Application\\Services\\PasswordService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T03:03:44.596Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "IStoreService.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Application\\IServices\\IStoreService.cs",
+              "RelativeDocumentMoniker": "..\\TechnoMarket.Application\\IServices\\IStoreService.cs",
+              "ToolTip": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Application\\IServices\\IStoreService.cs",
+              "RelativeToolTip": "..\\TechnoMarket.Application\\IServices\\IStoreService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T03:05:41.776Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "IProductService.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Application\\IServices\\IProductService.cs",
+              "RelativeDocumentMoniker": "..\\TechnoMarket.Application\\IServices\\IProductService.cs",
+              "ToolTip": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Application\\IServices\\IProductService.cs",
+              "RelativeToolTip": "..\\TechnoMarket.Application\\IServices\\IProductService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T03:06:20.014Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "UserDto.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket\\Models\\UserDto.cs",
+              "RelativeDocumentMoniker": "Models\\UserDto.cs",
+              "ToolTip": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket\\Models\\UserDto.cs",
+              "RelativeToolTip": "Models\\UserDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T02:57:29.277Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Controllers\\UserController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T03:00:29.006Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ApplicationContext.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Infrastructure\\ApplicationContext.cs",
+              "RelativeDocumentMoniker": "..\\TechnoMarket.Infrastructure\\ApplicationContext.cs",
+              "ToolTip": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Infrastructure\\ApplicationContext.cs",
+              "RelativeToolTip": "..\\TechnoMarket.Infrastructure\\ApplicationContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADIAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T22:32:13.554Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "UserCreateDTO.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Domain\\DTOs\\UserCreateDTO.cs",
+              "RelativeDocumentMoniker": "..\\TechnoMarket.Domain\\DTOs\\UserCreateDTO.cs",
+              "ToolTip": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Domain\\DTOs\\UserCreateDTO.cs",
+              "RelativeToolTip": "..\\TechnoMarket.Domain\\DTOs\\UserCreateDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T03:20:16.499Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "StoreWithProductsDTO.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Domain\\DTOs\\StoreWithProductsDTO.cs",
+              "RelativeDocumentMoniker": "..\\TechnoMarket.Domain\\DTOs\\StoreWithProductsDTO.cs",
+              "ToolTip": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Domain\\DTOs\\StoreWithProductsDTO.cs",
+              "RelativeToolTip": "..\\TechnoMarket.Domain\\DTOs\\StoreWithProductsDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T03:19:46.673Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "StoreDTO.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Domain\\DTOs\\StoreDTO.cs",
+              "RelativeDocumentMoniker": "..\\TechnoMarket.Domain\\DTOs\\StoreDTO.cs",
+              "ToolTip": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Domain\\DTOs\\StoreDTO.cs",
+              "RelativeToolTip": "..\\TechnoMarket.Domain\\DTOs\\StoreDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T03:18:59.555Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ProductUpdateDTO.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Domain\\DTOs\\ProductUpdateDTO.cs",
+              "RelativeDocumentMoniker": "..\\TechnoMarket.Domain\\DTOs\\ProductUpdateDTO.cs",
+              "ToolTip": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Domain\\DTOs\\ProductUpdateDTO.cs",
+              "RelativeToolTip": "..\\TechnoMarket.Domain\\DTOs\\ProductUpdateDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T03:18:31.988Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "ProductDTO.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Domain\\DTOs\\ProductDTO.cs",
+              "RelativeDocumentMoniker": "..\\TechnoMarket.Domain\\DTOs\\ProductDTO.cs",
+              "ToolTip": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Domain\\DTOs\\ProductDTO.cs",
+              "RelativeToolTip": "..\\TechnoMarket.Domain\\DTOs\\ProductDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T03:18:04.246Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "PasswordVerificationDTO.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Domain\\DTOs\\PasswordVerificationDTO.cs",
+              "RelativeDocumentMoniker": "..\\TechnoMarket.Domain\\DTOs\\PasswordVerificationDTO.cs",
+              "ToolTip": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Domain\\DTOs\\PasswordVerificationDTO.cs",
+              "RelativeToolTip": "..\\TechnoMarket.Domain\\DTOs\\PasswordVerificationDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T03:17:22.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "OwnerDTO.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Domain\\DTOs\\OwnerDTO.cs",
+              "RelativeDocumentMoniker": "..\\TechnoMarket.Domain\\DTOs\\OwnerDTO.cs",
+              "ToolTip": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Domain\\DTOs\\OwnerDTO.cs",
+              "RelativeToolTip": "..\\TechnoMarket.Domain\\DTOs\\OwnerDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T03:16:37.449Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Sale.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Domain\\Entities\\Sale.cs",
+              "RelativeDocumentMoniker": "..\\TechnoMarket.Domain\\Entities\\Sale.cs",
+              "ToolTip": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Domain\\Entities\\Sale.cs",
+              "RelativeToolTip": "..\\TechnoMarket.Domain\\Entities\\Sale.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T03:10:00.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Domain\\Entities\\Product.cs",
+              "RelativeDocumentMoniker": "..\\TechnoMarket.Domain\\Entities\\Product.cs",
+              "ToolTip": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Domain\\Entities\\Product.cs",
+              "RelativeToolTip": "..\\TechnoMarket.Domain\\Entities\\Product.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACkAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T03:09:09.105Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Store.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Domain\\Entities\\Store.cs",
+              "RelativeDocumentMoniker": "..\\TechnoMarket.Domain\\Entities\\Store.cs",
+              "ToolTip": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Domain\\Entities\\Store.cs",
+              "RelativeToolTip": "..\\TechnoMarket.Domain\\Entities\\Store.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T03:08:35.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
               "ToolTip": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAABAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-05-24T21:55:13.137Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 35,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAAACEAAAAaAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGcAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-23T01:48:34.393Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "TechnoMarket",
+              "DocumentIndex": 40,
+              "Title": "20240524224256_InitialMigration.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket\\Migrations\\20240524224256_InitialMigration.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240524224256_InitialMigration.cs",
+              "ToolTip": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket\\Migrations\\20240524224256_InitialMigration.cs",
+              "RelativeToolTip": "Migrations\\20240524224256_InitialMigration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAIBJwBYAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T22:42:56.678Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "TechnoMarket.csproj",
               "DocumentMoniker": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket\\TechnoMarket.csproj",
               "RelativeDocumentMoniker": "TechnoMarket.csproj",
               "ToolTip": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket\\TechnoMarket.csproj",
@@ -168,7 +653,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 37,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "C:\\Users\\tadeo\\OneDrive\\Escritorio\\Programas cufa\\tpiP3\\TechnoMarket-API\\TechnoMarket.Infrastructure\\Repositories\\UserRepository.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\tadeo\\OneDrive\\Escritorio\\Programas cufa\\tpiP3\\TechnoMarket-API\\TechnoMarket.Infrastructure\\Repositories\\UserRepository.cs",
@@ -179,7 +664,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 38,
               "Title": "ApplicationContext.cs",
               "DocumentMoniker": "C:\\Users\\tadeo\\OneDrive\\Escritorio\\Programas cufa\\tpiP3\\TechnoMarket-API\\TechnoMarket.Infrastructure\\ApplicationContext.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\tadeo\\OneDrive\\Escritorio\\Programas cufa\\tpiP3\\TechnoMarket-API\\TechnoMarket.Infrastructure\\ApplicationContext.cs",

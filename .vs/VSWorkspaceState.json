@@ -1,6 +1,14 @@
 {
   "ExpandedNodes": [
-    "\\TechnoMarket.Domain"
+    "",
+    "\\TechnoMarket.Application",
+    "\\TechnoMarket.Application\\Services",
+    "\\TechnoMarket.Domain",
+    "\\TechnoMarket.Domain\\Entities",
+    "\\TechnoMarket.Domain\\Interfaces",
+    "\\TechnoMarket.Infrastructure",
+    "\\TechnoMarket.Infrastructure\\Repositories",
+    "\\TechnoMarket\\Migrations"
   ],
   "PreviewInSolutionExplorer": false
 }
