@@ -35,12 +35,20 @@ builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<IStoreService, StoreService>();
 #endregion
 
+builder.Services.AddControllers()
+    .AddJsonOptions(options =>
+    {
+        // Evitar la inclusión de $id y $value
+        options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles;
+        options.JsonSerializerOptions.DefaultIgnoreCondition = System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull;
+    });
+
 builder.Services.AddAuthorization(options =>
 {
     options.AddPolicy("RequireCustomerRole", policy => policy.RequireRole("Customer"));
     options.AddPolicy("RequireCustomerRole", policy => policy.RequireRole("Seller"));
     options.AddPolicy("RequireCustomerRole", policy => policy.RequireRole("Admin"));
-    options.AddPolicy("RequireCustomerRole", policy => policy.RequireRole("Super-Admin"));
+    options.AddPolicy("RequireCustomerRole", policy => policy.RequireRole("SuperAdmin"));
 });
 
 builder.Services.AddAuthentication("Bearer") //"Bearer" es el tipo de auntenticación que tenemos que elegir después en PostMan para pasarle el token

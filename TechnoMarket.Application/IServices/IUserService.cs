@@ -10,14 +10,14 @@ namespace TechnoMarket.Application.IServices
 {
     public interface IUserService
     {
-        public UserModel GetByEmail(string email);
-        public List<User> Get();
+        public User GetByEmail(string email);
+        public List<UserDTO> Get();
         public UserModel CreateUser(UserCreateDTO userDTO);
+        public void UpdateUser(UserModel user, Guid id);
         public User? DeleteUser(Guid id);
-        public UserModel? CheckCredentials(CredentialsRequest credentials);
+        public User? CheckCredentials(CredentialsRequest credentials);
         public User GetById(Guid id);
-        public void Update(UserUpdateDTO user, Guid id);
-        public bool VerifyPassword(Guid userId, string password);
+        public void Update(UserUpdateDTO user, Guid id, int Opt);
         public void ChangeActive(Guid id);
     }
 }

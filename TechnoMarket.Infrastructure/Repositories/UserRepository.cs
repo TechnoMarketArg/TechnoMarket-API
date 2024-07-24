@@ -30,7 +30,9 @@ namespace TechnoMarket.Infrastructure.Repositories
 
         public List<User> Get()
         {
-            return _context.Users.ToList();
+            return _context.Users
+                .Include(u => u.Store)
+                .ToList();
         }
 
         public User AddUser(User user)

@@ -27,6 +27,14 @@ namespace TechnoMarket.Controllers
             return Ok(_storeService.GetStores());
         }
 
+        [HttpGet("GetById/{id}")]
+        public IActionResult GetById([FromRoute] Guid id)
+        {
+            var store = _storeService.GetById(id);
+            
+            return Ok(store);
+        }
+
         [HttpGet("GetStoreWithProducts")]
         public IActionResult GetStoreWithProducts()
         {
@@ -67,15 +75,13 @@ namespace TechnoMarket.Controllers
 
             UserUpdateDTO userModel = new UserUpdateDTO
             {
-                Id = user.Id,
                 Email = user.Email,
                 Password = user.Password,
                 FirstName = user.FirstName,
                 LastName = user.LastName,
-                Role = UserRole.Seller
             };
 
-            _userService.Update(userModel, user.Id);
+            _userService.Update(userModel, user.Id, 2);
 
             return Ok("Store created successfully");
         }

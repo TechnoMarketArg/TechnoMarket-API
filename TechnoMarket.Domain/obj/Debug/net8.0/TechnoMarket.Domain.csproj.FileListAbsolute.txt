@@ -22,3 +22,5 @@ C:\Users\augus\Desktop\TpiApi_Prog3\TechnoMarket-API\TechnoMarket.Domain\obj\Deb
 C:\Users\augus\Desktop\TpiApi_Prog3\TechnoMarket-API\TechnoMarket.Domain\obj\Debug\net8.0\TechnoMarket.Domain.pdb
 C:\Users\augus\Desktop\TpiApi_Prog3\TechnoMarket-API\TechnoMarket.Domain\obj\Debug\net8.0\ref\TechnoMarket.Domain.dll
 C:\Users\augus\Desktop\TpiApi_Prog3\TechnoMarket-API\TechnoMarket.Domain\obj\Debug\net8.0\TechnoMarket.Domain.csproj.AssemblyReference.cache
+C:\Users\sebas\OneDrive\Escritorio\TechnoMarket\TechnoMarket-API\TechnoMarket.Domain\obj\Debug\net8.0\TechnoMarket.Domain.csproj.AssemblyReference.cache
+C:\Users\sebas\OneDrive\Escritorio\TechnoMarket\TechnoMarket-API\TechnoMarket.Domain\obj\Debug\net8.0\TechnoMarket.Domain.sourcelink.json

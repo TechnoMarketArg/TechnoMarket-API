@@ -14,7 +14,7 @@ namespace TechnoMarket.Domain.DTOs
 {
     public class UserModel
     {
-        public Guid Id { get; set; }
+        public string Id { get; set; }
 
         [Unique]
         [EmailAddress]

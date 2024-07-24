@@ -63,5 +63,39 @@ namespace TechnoMarket.Infrastructure.Repositories
                 .ToList();
         }
 
+        public Store GetById(Guid id)
+        {
+            var store = _context.Stores
+                .FirstOrDefault(u => u.Id == id);
+
+            if (store != null)
+            {
+                return store;
+            }
+            else
+            {
+                throw new Exception("Store no encontrada");
+            }
+
+        }
+
+        public void Update(Store store)
+        {
+            if (store == null)
+            {
+                throw new ArgumentNullException(nameof(store), "La store no puede ser nula.");
+            }
+
+            try
+            {
+                _context.Stores.Update(store);
+                _context.SaveChanges();
+            }
+            catch (DbUpdateException ex)
+            {
+                throw new ApplicationException("Error al actualizar el usuario en la base de datos.", ex);
+            }
+        }
+
     }
 }

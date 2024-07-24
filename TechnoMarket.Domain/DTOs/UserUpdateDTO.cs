@@ -12,8 +12,6 @@ namespace TechnoMarket.Domain.DTOs
 {
     public class UserUpdateDTO
     {
-
-        public Guid Id { get; set; }
         [Unique]
         [EmailAddress]
         public string Email { get; set; }
@@ -23,8 +21,5 @@ namespace TechnoMarket.Domain.DTOs
         public string FirstName { get; set; }
 
         public string LastName { get; set; }
-
-        [JsonConverter(typeof(JsonStringEnumConverter))]
-        public UserRole Role { get; set; }
     }
 }

@@ -14,5 +14,6 @@ namespace TechnoMarket.Application.IServices
         public List<StoreDTO> GetStores();
         public void CreateStore(Store store);
         public List<StoreWithProductsDTO> GetStoreWithProducts();
+        public Store GetById(Guid id);
     }
 }

@@ -33,5 +33,17 @@ namespace TechnoMarket.Application.Services
         {
             return _storeRepository.GetStoreWithProducts();
         }
+
+        public Store GetById(Guid id)
+        {
+            Store store = _storeRepository.GetById(id);
+
+            if (store == null)
+            {
+                throw new Exception("No se encontró ningún usuario con ese ID.");
+            }
+
+            return store;
+        }
     }
 }

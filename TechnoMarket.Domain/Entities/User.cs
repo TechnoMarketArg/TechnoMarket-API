@@ -6,6 +6,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Data;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 using static System.Formats.Asn1.AsnWriter;
 
@@ -31,7 +32,7 @@ namespace TechnoMarket.Domain.Entities
 
         public UserRole Role { get; set; }
 
-        public Guid? StoreId { get; set; } = Guid.Empty;
+        public Guid? StoreId { get; set; } = null;
 
         public Store? Store { get; set; } = null;
 

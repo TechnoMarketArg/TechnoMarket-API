@@ -3553,19 +3553,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\augus\\.nuget\\packages\\": {}
+    "C:\\Users\\sebas\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket\\TechnoMarket.csproj",
+      "projectUniqueName": "C:\\Users\\sebas\\OneDrive\\Escritorio\\TechnoMarket\\TechnoMarket-API\\TechnoMarket\\TechnoMarket.csproj",
       "projectName": "TechnoMarket",
-      "projectPath": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket\\TechnoMarket.csproj",
-      "packagesPath": "C:\\Users\\augus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket\\obj\\",
+      "projectPath": "C:\\Users\\sebas\\OneDrive\\Escritorio\\TechnoMarket\\TechnoMarket-API\\TechnoMarket\\TechnoMarket.csproj",
+      "packagesPath": "C:\\Users\\sebas\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\sebas\\OneDrive\\Escritorio\\TechnoMarket\\TechnoMarket-API\\TechnoMarket\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\augus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\sebas\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3579,11 +3579,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Application\\TechnoMarket.Application.csproj": {
-              "projectPath": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Application\\TechnoMarket.Application.csproj"
+            "C:\\Users\\sebas\\OneDrive\\Escritorio\\TechnoMarket\\TechnoMarket-API\\TechnoMarket.Application\\TechnoMarket.Application.csproj": {
+              "projectPath": "C:\\Users\\sebas\\OneDrive\\Escritorio\\TechnoMarket\\TechnoMarket-API\\TechnoMarket.Application\\TechnoMarket.Application.csproj"
             },
-            "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Infrastructure\\TechnoMarket.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\augus\\Desktop\\TpiApi_Prog3\\TechnoMarket-API\\TechnoMarket.Infrastructure\\TechnoMarket.Infrastructure.csproj"
+            "C:\\Users\\sebas\\OneDrive\\Escritorio\\TechnoMarket\\TechnoMarket-API\\TechnoMarket.Infrastructure\\TechnoMarket.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\sebas\\OneDrive\\Escritorio\\TechnoMarket\\TechnoMarket-API\\TechnoMarket.Infrastructure\\TechnoMarket.Infrastructure.csproj"
             }
           }
         }
@@ -3649,7 +3649,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
       }
     }
   },

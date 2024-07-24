@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Microsoft.AspNet.Identity;
+using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,24 +23,52 @@ namespace TechnoMarket.Application.Services
 
         }
 
-        public UserModel GetByEmail(string email)
+        public User GetByEmail(string email)
         {
-            var user = _repository.GetByEmail(email);
-            UserModel model = new UserModel()
+            try
             {
-                Email = email,
-                Password = user.Password,
-                FirstName = user.FirstName,
-                LastName = user.LastName,
-                Role = user.Role,
-                Id = user.Id
-            };
-            return model;
+                if (!IsValidEmail(email))
+                {
+                    throw new ArgumentException("El formato del correo electrónico es inválido.");
+                }
+
+                var user = _repository.GetByEmail(email);
+
+                if (user == null)
+                {
+                    throw new Exception("No se encontró ningún usuario con ese correo electrónico.");
+                }
+
+                return user;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Error al obtener el usuario: {ex.Message}");
+            }
         }
 
-        public List<User> Get()
+        private bool IsValidEmail(string email)
         {
-            return _repository.Get();
+            var emailAttribute = new EmailAddressAttribute();
+            return emailAttribute.IsValid(email);
+        }
+
+        public List<UserDTO> Get()
+        {
+            var users = _repository.Get();
+            return users.Select(u => new UserDTO
+            {
+                Id = u.Id.ToString(),
+                Email = u.Email,
+                FirstName = u.FirstName,
+                LastName = u.LastName,
+                Role = u.Role,
+                Store = u.Store != null ? new StoreUserDTO
+                {
+                    Id = u.Store.Id.ToString(),
+                    Name = u.Store.Name
+                } : null
+            }).ToList();
         }
 
         public UserModel CreateUser(UserCreateDTO userDTO)
@@ -69,24 +99,36 @@ namespace TechnoMarket.Application.Services
             return _repository.DeleteUser(id);
         }
 
-        public UserModel? CheckCredentials(CredentialsRequest credentials)
+        public User? CheckCredentials(CredentialsRequest credentials)
         {
-            var user = GetByEmail(credentials.Email);
-            if (user == null)
+            try
             {
-                return null;
-            }
+                var user = GetByEmail(credentials.Email);
 
-            bool isPasswordValid = _passwordService.VerifyPassword(user.Password, credentials.Password);
-            if (isPasswordValid)
-            {
-                user.Password = string.Empty;
+                if (user == null)
+                {
+                    throw new Exception("Usuario no encontrado.");
+                }
+
+                bool isPasswordValid = _passwordService.VerifyPassword(user.Password, credentials.Password);
+                if (!isPasswordValid)
+                {
+                    throw new Exception("Credenciales inválidas.");
+                }
+
+                user.Password = string.Empty; // Limpiar la contraseña antes de retornar
                 return user;
             }
-            return null;
+            catch (Exception ex)
+            {
+                // Puedes registrar la excepción si es necesario
+                // LogException(ex);
+
+                throw new Exception($"Error en CheckCredentials: {ex.Message}");
+            }
         }
 
-        public void Update(UserUpdateDTO user, Guid id)
+        public void Update(UserUpdateDTO user, Guid id, int Opt)
         {
             var existingUser = _repository.GetById(id);
 
@@ -95,31 +137,54 @@ namespace TechnoMarket.Application.Services
                 throw new ApplicationException($"No se encontró ningún usuario con Id {id}");
             }
 
-            existingUser.Email = user.Email;
-            if (!string.IsNullOrEmpty(user.Password))
+            if (Opt == 1)
             {
-                user.Password = user.Password;
+                existingUser.Email = user.Email;
+                existingUser.Password = _passwordService.HashPassword(user.Password);
+                existingUser.FirstName = user.FirstName;
+                existingUser.LastName = user.LastName;
             }
+            else
+            {
+                existingUser.Email = user.Email;
+                existingUser.Password = _passwordService.HashPassword(user.Password);
+                existingUser.FirstName = user.FirstName;
+                existingUser.LastName = user.LastName;
+                existingUser.Role = UserRole.Seller;
+            }
+            
+
+            _repository.Update(existingUser);
+        }
+
+        public void UpdateUser(UserModel user, Guid id)
+        {
+            User existingUser = _repository.GetById(id);
+
+            if (existingUser == null)
+            {
+                throw new ApplicationException($"No se encontró ningún usuario con Id {id}");
+            }
+
+            existingUser.Email = user.Email;
+            existingUser.Password = _passwordService.HashPassword(user.Password);
             existingUser.FirstName = user.FirstName;
             existingUser.LastName = user.LastName;
+            existingUser.Role = user.Role;
 
             _repository.Update(existingUser);
         }
 
         public User GetById(Guid id)
         {
-            return _repository.GetById(id);
-        }
+            User user = _repository.GetById(id);
 
-        public bool VerifyPassword(Guid userId, string password)
-        {
-            var user = _repository.GetById(userId);
             if (user == null)
             {
-                throw new KeyNotFoundException("User not found");
+                throw new Exception("No se encontró ningún usuario con ese ID.");
             }
 
-            return _passwordService.VerifyPassword(password, user.Password);
+            return user;
         }
 
         public void ChangeActive(Guid id)

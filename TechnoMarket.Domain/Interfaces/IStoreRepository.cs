@@ -13,5 +13,7 @@ namespace TechnoMarket.Domain.Interfaces
         public List<StoreDTO> GetStores();
         public void CreateStore(Store store);
         public List<StoreWithProductsDTO> GetStoreWithProducts();
+        public Store GetById(Guid id);
+        public void Update(Store store);
     }
 }

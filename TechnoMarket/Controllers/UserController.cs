@@ -24,19 +24,50 @@ namespace TechnoMarket.Controllers
             _storeService = storeService;
         }
 
-
-        [HttpGet("{email}")]
+        [HttpGet("GetByEmail/{email}")]
         [Authorize(Roles = "Admin")]
-        public IActionResult Get([FromRoute] string email)
+        public IActionResult GetByEmail([FromRoute] string email)
         {
             return Ok(_userService.GetByEmail(email));
+        }
+
+        [HttpGet("GetById/{id}")]
+        [Authorize(Roles = "Admin")]
+        public IActionResult GetById([FromRoute] Guid id)
+        {
+            return Ok(_userService.GetById(id));
         }
 
         [HttpGet("All")]
         [Authorize(Roles = "Admin")]
         public IActionResult Get()
         {
-            return Ok(_userService.Get());
+            var users = _userService.Get();
+            return Ok(users);
+        }
+
+        [HttpGet("Profile")]
+        [Authorize]
+        public IActionResult Profile()
+        {
+            var userIdClaim = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier)?.Value;
+            if (string.IsNullOrEmpty(userIdClaim))
+            {
+                return BadRequest("User ID claim not found.");
+            }
+
+            var userId = Guid.Parse(userIdClaim);
+
+            var user = _userService.GetById(userId);
+
+            ProfileDTO profileDTO = new ProfileDTO()
+            {
+                Email = user.Email,
+                FirstName = user.FirstName,
+                LastName = user.LastName,
+            };
+
+            return Ok(profileDTO);
         }
 
         [HttpPost("register")]
@@ -46,15 +77,16 @@ namespace TechnoMarket.Controllers
             return Ok(createdUser);
         }
 
-        [HttpDelete]
+        [HttpPut("UpdateUser/{id}")]
         [Authorize(Roles = "Admin")]
-        public IActionResult DeleteUser([FromQuery] Guid id)
+        public IActionResult UpdateUser([FromRoute] string id, [FromBody] UserModel userModel)
         {
-            return Ok(_userService.DeleteUser(id));
+            var IdGuid = Guid.Parse(id);
+            _userService.UpdateUser(userModel, IdGuid);
+            return Ok("User updated successfully");
         }
 
-
-        [HttpPost("update")]
+        [HttpPut("Update")]
         [Authorize]
         public IActionResult Update([FromBody] UserUpdateDTO userUpdateDTO)
         {
@@ -65,32 +97,15 @@ namespace TechnoMarket.Controllers
             }
 
             var userId = Guid.Parse(userIdClaim);
-            _userService.Update(userUpdateDTO, userId);
+            _userService.Update(userUpdateDTO, userId, 1);
             return Ok("User updated successfully");
         }
 
-        [HttpPost("verify-password")]
-        [Authorize]
-        public IActionResult VerifyPassword([FromBody] PasswordVerificationDTO dto)
-        {
-            var userIdClaim = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier)?.Value;
-            if (string.IsNullOrEmpty(userIdClaim))
-            {
-                return BadRequest("User ID claim not found.");
-            }
-
-            var userId = Guid.Parse(userIdClaim);
-            var isValid = _userService.VerifyPassword(userId, dto.Password);
-            return Ok(isValid);
-        }
-
-        [HttpPut("ChangeActive")]
+        [HttpPut("ChangeActive/{id}")]
         [Authorize(Roles = "Admin")]
-        public IActionResult ChangeActive([FromQuery] string id)
+        public IActionResult ChangeActive([FromRoute] Guid id)
         {
-            var idGuid = Guid.Parse(id);
-
-            _userService.ChangeActive(idGuid);
+            _userService.ChangeActive(id);
             return Ok();
         }
 
@@ -108,6 +123,15 @@ namespace TechnoMarket.Controllers
 
             _userService.ChangeActive(idGuid);
             return Ok();
+        }
+
+
+
+        [HttpDelete("{id}")]
+        [Authorize(Roles = "Admin")]
+        public IActionResult DeleteUser([FromRoute] Guid id)
+        {
+            return Ok(_userService.DeleteUser(id));
         }
 
     }
