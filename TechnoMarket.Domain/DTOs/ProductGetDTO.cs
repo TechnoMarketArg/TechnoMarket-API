@@ -28,5 +28,7 @@ namespace TechnoMarket.Domain.DTOs
 
         public Guid StoreId { get; set; }
 
+        public CategoryDTO Category { get; set; }
+
     }
 }

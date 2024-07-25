@@ -44,7 +44,7 @@ namespace TechnoMarket.Controllers
         }
 
         [HttpGet("{productId}")]
-        public IActionResult GetProduct(Guid productId) 
+        public IActionResult GetProduct([FromRoute] Guid productId) 
         {
             var product = _productService.GetById(productId);
 
@@ -81,9 +81,17 @@ namespace TechnoMarket.Controllers
             var products = _productService.GetProductsByCategory(categoryId);
             if (products == null || !products.Any())
             {
-                return NotFound();
+                return NotFound("No hay productos cone sta categoria");
             }
             return Ok(products);
+        }
+
+        [HttpPost("AddCategory")]
+        [Authorize(Roles = "Admin")]
+        public IActionResult AddCategoy([FromBody] CategoryCreateDTO categoryDTO)
+        {
+            _productService.AddCategory(categoryDTO);
+            return Ok();
         }
 
         [HttpPost("add")]
@@ -113,14 +121,15 @@ namespace TechnoMarket.Controllers
                 Description = product.Description,
                 Price = product.Price,
                 Quantity = product.Quantity,
-                StoreId = storeId
+                StoreId = storeId,
+                CategoryId = product.CategoryId
 
             };
 
             try
             {
                 _productService.AddProduct(newProduct);
-                return Ok(newProduct);
+                return Ok();
             }
             catch (Exception ex)
             {
@@ -144,9 +153,16 @@ namespace TechnoMarket.Controllers
 
         [HttpDelete("{id}")]
         [Authorize(Roles = "Admin")]
-        public ActionResult<Product> DeleteProduct([FromRoute] Guid id)
+        public IActionResult DeleteProduct([FromRoute] Guid id)
         {
-            return Ok(_productService.DeleteProduct(id));
+            try
+            {
+                _productService.DeleteProduct(id);
+                return Ok("producto eliminado");
+            }catch (Exception ex)
+            {
+                return BadRequest($"Error Update product: {ex.Message}");
+            }
         }
 
         

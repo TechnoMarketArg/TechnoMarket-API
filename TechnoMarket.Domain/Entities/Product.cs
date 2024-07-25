@@ -34,7 +34,9 @@ namespace TechnoMarket.Domain.Entities
 
         public Store Store { get; set; }
 
-        public ICollection<Category> Categories { get; set; } = new List<Category>();
+        public Guid CategoryId { get; set; }
+
+        public Category Category { get; set; }
 
         public Product() { }
 

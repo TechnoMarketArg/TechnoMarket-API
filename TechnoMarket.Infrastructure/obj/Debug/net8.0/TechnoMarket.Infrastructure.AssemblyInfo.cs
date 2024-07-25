@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TechnoMarket.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5457757f1de4c65ec33aa4492be913e7c032d504")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f3407073073b62d394dd8a742f87994fc4a2d096")]
 [assembly: System.Reflection.AssemblyProductAttribute("TechnoMarket.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TechnoMarket.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

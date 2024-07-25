@@ -146,5 +146,10 @@ namespace TechnoMarket.Infrastructure.Repositories
             _context.SaveChanges();
         }
 
+        public bool StoreExists(Guid storeId)
+        {
+            return _context.Stores.Any(s => s.Id == storeId);
+        }
+
     }
 }

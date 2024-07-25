@@ -53,12 +53,15 @@ namespace TechnoMarket.Infrastructure
             .OnDelete(DeleteBehavior.Cascade);
 
             modelBuilder.Entity<Product>()
-            .HasMany(p => p.Categories)
-            .WithMany(c => c.Products)
-            .UsingEntity(j => j.ToTable("ProductCategories")); //tabla intermedia que se usará para mantener la relación muchos a muchos.que contendrá las claves foráneas que vinculan Products y Categories.
+                .HasOne(p => p.Category)
+                .WithMany(c => c.Products)
+                .HasForeignKey(p => p.CategoryId);
 
             modelBuilder.Entity<Category>()
-            .ToTable("Categories"); // Asegúrate de que esté mapeando a la tabla correcta
+                .ToTable("Categories");
+
+            modelBuilder.Entity<Product>()
+                .ToTable("Products");
         }
     }
 }

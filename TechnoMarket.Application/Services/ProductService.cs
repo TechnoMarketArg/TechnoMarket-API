@@ -15,9 +15,13 @@ namespace TechnoMarket.Application.Services
     public class ProductService : IProductService
     {
         private readonly IProductRepository _productRepository;
-        public ProductService(IProductRepository productRepository)
+        private readonly IStoreRepository _storeRepository;
+        private readonly ICategoryRepository _categoryRepository;
+        public ProductService(IProductRepository productRepository, IStoreRepository storeRepository, ICategoryRepository categoryRepository)
         {
             _productRepository = productRepository;
+            _storeRepository = storeRepository;
+            _categoryRepository = categoryRepository;
         }
 
         public List<Product?> GetAll()
@@ -30,14 +34,26 @@ namespace TechnoMarket.Application.Services
             return _productRepository.GetById(id);
         }
 
-        public Product AddProduct(Product product)
+        public void AddProduct(Product product)
         {
-            return _productRepository.AddProduct(product);
+            var storeExists = _storeRepository.StoreExists(product.StoreId);
+            if (!storeExists)
+            {
+                throw new Exception("Store does not exist.");
+            }
+
+            /*var categoryExists = _categoryRepository.CategoryExists(product.CategoryId);
+            if (!categoryExists)
+            {
+                throw new Exception("Category does not exist.");
+            }*/
+
+            _productRepository.AddProduct(product);
         }
 
-        public Product? DeleteProduct(Guid id)
+        public void DeleteProduct(Guid id)
         {
-            return _productRepository.DeleteProduct(id);
+            _productRepository.DeleteProduct(id);
         }
 
         public void UpdateProduct(ProductUpdateDTO productDTO, Guid id)
@@ -60,7 +76,7 @@ namespace TechnoMarket.Application.Services
 
         public List<CategoryDTO> GetCategories()
         {
-            var categories = _productRepository.GetCategories();
+            var categories = _categoryRepository.GetCategories();
 
             var categoryDTOs = categories.Select(c => new CategoryDTO
             {
@@ -87,10 +103,26 @@ namespace TechnoMarket.Application.Services
                 Discount = product.Discount,
                 Status = product.Status,
                 StoreId = product.StoreId,
-
+                Category = new CategoryDTO
+                {
+                    Id = product.Category.Id,
+                    Name = product.Category.Name
+                }
             }).ToList();
 
             return productDTOs;
         }
+
+        public void AddCategory(CategoryCreateDTO categoryDTO)
+        {
+            Category newCategory  = new Category()
+            {
+                Name = categoryDTO.Name,
+                Description= categoryDTO.Description,
+            };
+
+            _categoryRepository.Add(newCategory);
+        }
+
     }
 }

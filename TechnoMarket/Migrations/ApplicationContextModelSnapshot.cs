@@ -17,21 +17,6 @@ namespace TechnoMarket.Migrations
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "8.0.7");
 
-            modelBuilder.Entity("CategoryProduct", b =>
-                {
-                    b.Property<Guid>("CategoriesId")
-                        .HasColumnType("TEXT");
-
-                    b.Property<Guid>("ProductsId")
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("CategoriesId", "ProductsId");
-
-                    b.HasIndex("ProductsId");
-
-                    b.ToTable("ProductCategories", (string)null);
-                });
-
             modelBuilder.Entity("TechnoMarket.Domain.Entities.Buyer", b =>
                 {
                     b.Property<Guid>("Id")
@@ -58,6 +43,52 @@ namespace TechnoMarket.Migrations
                     b.ToTable("Buyer");
                 });
 
+            modelBuilder.Entity("TechnoMarket.Domain.Entities.Cart", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("TEXT");
+
+                    b.Property<decimal>("TotalPrice")
+                        .HasColumnType("TEXT");
+
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Carts");
+                });
+
+            modelBuilder.Entity("TechnoMarket.Domain.Entities.CartItem", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("TEXT");
+
+                    b.Property<Guid>("CartId")
+                        .HasColumnType("TEXT");
+
+                    b.Property<Guid>("ProductId")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<decimal>("UnitPrice")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CartId");
+
+                    b.HasIndex("ProductId");
+
+                    b.ToTable("CartItems");
+                });
+
             modelBuilder.Entity("TechnoMarket.Domain.Entities.Category", b =>
                 {
                     b.Property<Guid>("Id")
@@ -81,6 +112,9 @@ namespace TechnoMarket.Migrations
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
+                        .HasColumnType("TEXT");
+
+                    b.Property<Guid>("CategoryId")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Description")
@@ -117,11 +151,13 @@ namespace TechnoMarket.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("CategoryId");
+
                     b.HasIndex("SaleId");
 
                     b.HasIndex("StoreId");
 
-                    b.ToTable("Products");
+                    b.ToTable("Products", (string)null);
                 });
 
             modelBuilder.Entity("TechnoMarket.Domain.Entities.Sale", b =>
@@ -210,23 +246,44 @@ namespace TechnoMarket.Migrations
                     b.ToTable("Users");
                 });
 
-            modelBuilder.Entity("CategoryProduct", b =>
+            modelBuilder.Entity("TechnoMarket.Domain.Entities.Cart", b =>
                 {
-                    b.HasOne("TechnoMarket.Domain.Entities.Category", null)
+                    b.HasOne("TechnoMarket.Domain.Entities.User", "User")
                         .WithMany()
-                        .HasForeignKey("CategoriesId")
+                        .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("TechnoMarket.Domain.Entities.Product", null)
-                        .WithMany()
-                        .HasForeignKey("ProductsId")
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("TechnoMarket.Domain.Entities.CartItem", b =>
+                {
+                    b.HasOne("TechnoMarket.Domain.Entities.Cart", "Cart")
+                        .WithMany("Items")
+                        .HasForeignKey("CartId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.HasOne("TechnoMarket.Domain.Entities.Product", "Product")
+                        .WithMany()
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Cart");
+
+                    b.Navigation("Product");
                 });
 
             modelBuilder.Entity("TechnoMarket.Domain.Entities.Product", b =>
                 {
+                    b.HasOne("TechnoMarket.Domain.Entities.Category", "Category")
+                        .WithMany("Products")
+                        .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("TechnoMarket.Domain.Entities.Sale", null)
                         .WithMany("Products")
                         .HasForeignKey("SaleId");
@@ -236,6 +293,8 @@ namespace TechnoMarket.Migrations
                         .HasForeignKey("StoreId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Category");
 
                     b.Navigation("Store");
                 });
@@ -264,6 +323,16 @@ namespace TechnoMarket.Migrations
                         .IsRequired();
 
                     b.Navigation("Owner");
+                });
+
+            modelBuilder.Entity("TechnoMarket.Domain.Entities.Cart", b =>
+                {
+                    b.Navigation("Items");
+                });
+
+            modelBuilder.Entity("TechnoMarket.Domain.Entities.Category", b =>
+                {
+                    b.Navigation("Products");
                 });
 
             modelBuilder.Entity("TechnoMarket.Domain.Entities.Sale", b =>

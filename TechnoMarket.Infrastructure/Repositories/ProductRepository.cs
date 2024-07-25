@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,22 +21,25 @@ namespace TechnoMarket.Infrastructure.Repositories
 
         public List<Product> GetAll()
         {
-            return _context.Products.ToList();
+            return _context.Products
+                .Include(p => p.Category)
+                .ToList();
         }
 
         public Product? GetById(Guid id)
         {
-            return _context.Products.FirstOrDefault(p => p.Id == id);
+            return _context.Products
+                .Include(p => p.Category)
+                .FirstOrDefault(p => p.Id == id);
         }
 
-        public Product AddProduct(Product product)
+        public void AddProduct(Product product)
         {
             _context.Products.Add(product);
             _context.SaveChanges();
-            return product;
         }
 
-        public Product? DeleteProduct(Guid id)
+        public void DeleteProduct(Guid id)
         {
             var product = _context.Products.FirstOrDefault(p => p.Id == id);
 
@@ -45,7 +49,6 @@ namespace TechnoMarket.Infrastructure.Repositories
                 _context.SaveChanges();
             }
 
-            return product;
         }
 
         public void UpdateProduct(Product product)
@@ -55,17 +58,12 @@ namespace TechnoMarket.Infrastructure.Repositories
             _context.SaveChanges();
         }
 
-        public List<Category> GetCategories()
-        {
-            return _context.Categories.ToList();
-        }
-
         public List<Product> GetProductsByCategory(Guid categoryId)
         {
             return _context.Products
-                .Where(p => p.Categories.Any(c => c.Id == categoryId))
+                .Include(p => p.Category)
+                .Where(p => p.CategoryId == categoryId)
                 .ToList();
         }
-
     }
 }

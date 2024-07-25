@@ -17,5 +17,6 @@ namespace TechnoMarket.Domain.Interfaces
         public void Update(Store store);
         public StoreWithProductsDTO StoreAndInventory(Guid storeId);
         public void Delete(Guid storeId);
+        public bool StoreExists(Guid storeId);
     }
 }

@@ -15,12 +15,13 @@ namespace TechnoMarket.Application.IServices
 
         public Product? GetById(Guid id);
 
-        public Product AddProduct(Product product);
+        public void AddProduct(Product product);
 
-        public Product? DeleteProduct(Guid id);
+        public void DeleteProduct(Guid id);
         public void UpdateProduct(ProductUpdateDTO productDTO, Guid id);
         public List<CategoryDTO> GetCategories();
         public List<ProductGetDTO> GetProductsByCategory(Guid categoryId);
+        public void AddCategory(CategoryCreateDTO categoryDTO);
 
     }
 }
