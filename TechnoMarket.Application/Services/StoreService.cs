@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,9 +20,9 @@ namespace TechnoMarket.Application.Services
             _storeRepository = storeRepository;
         }
 
-        public void CreateStore(Store store)
+        public void CreateStore(Store store, Guid userId)
         {
-            _storeRepository.CreateStore(store);
+            _storeRepository.CreateStore(store, userId);
         }
 
         public List<StoreDTO> GetStores()
@@ -44,6 +45,30 @@ namespace TechnoMarket.Application.Services
             }
 
             return store;
+        }
+
+        public StoreWithProductsDTO StoreAndInventory(Guid storeId)
+        {
+            return _storeRepository.StoreAndInventory(storeId);
+        }
+
+        public void Delete(Guid storeId)
+        {
+            _storeRepository.Delete(storeId);
+        }
+
+        public void Update(Guid StoreId, StoreUpdateDTO storeDTO)
+        {
+            var store = _storeRepository.GetById(StoreId);
+            if (store == null)
+            {
+                throw new Exception("No se encontró ningún usuario con ese ID.");
+            }
+
+            store.Name = storeDTO.Name;
+            store.Description = storeDTO.Description;
+
+            _storeRepository.Update(store);
         }
     }
 }

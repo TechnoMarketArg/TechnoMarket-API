@@ -23,6 +23,20 @@ namespace TechnoMarket.Application.Services
 
         }
 
+        public void PromoteToAdmin(Guid userId)
+        {
+            var user = _repository.GetById(userId);
+            if (user != null)
+            {
+                user.Role = UserRole.Admin;
+                _repository.Update(user);
+            }
+            else
+            {
+                throw new Exception("User not found");
+            }
+        }
+
         public User GetByEmail(string email)
         {
             try
@@ -116,19 +130,16 @@ namespace TechnoMarket.Application.Services
                     throw new Exception("Credenciales inválidas.");
                 }
 
-                user.Password = string.Empty; // Limpiar la contraseña antes de retornar
+                user.Password = string.Empty;
                 return user;
             }
             catch (Exception ex)
             {
-                // Puedes registrar la excepción si es necesario
-                // LogException(ex);
-
                 throw new Exception($"Error en CheckCredentials: {ex.Message}");
             }
         }
 
-        public void Update(UserUpdateDTO user, Guid id, int Opt)
+        public void Update(UserUpdateDTO user, Guid id)
         {
             var existingUser = _repository.GetById(id);
 
@@ -137,23 +148,11 @@ namespace TechnoMarket.Application.Services
                 throw new ApplicationException($"No se encontró ningún usuario con Id {id}");
             }
 
-            if (Opt == 1)
-            {
-                existingUser.Email = user.Email;
-                existingUser.Password = _passwordService.HashPassword(user.Password);
-                existingUser.FirstName = user.FirstName;
-                existingUser.LastName = user.LastName;
-            }
-            else
-            {
-                existingUser.Email = user.Email;
-                existingUser.Password = _passwordService.HashPassword(user.Password);
-                existingUser.FirstName = user.FirstName;
-                existingUser.LastName = user.LastName;
-                existingUser.Role = UserRole.Seller;
-            }
+            existingUser.Email = user.Email;
+            existingUser.Password = user.Password;
+            existingUser.FirstName = user.FirstName;
+            existingUser.LastName = user.LastName;
             
-
             _repository.Update(existingUser);
         }
 
@@ -167,7 +166,7 @@ namespace TechnoMarket.Application.Services
             }
 
             existingUser.Email = user.Email;
-            existingUser.Password = _passwordService.HashPassword(user.Password);
+            existingUser.Password = user.Password;
             existingUser.FirstName = user.FirstName;
             existingUser.LastName = user.LastName;
             existingUser.Role = user.Role;

@@ -32,15 +32,9 @@ namespace TechnoMarket.Domain.Entities
 
         public UserRole Role { get; set; }
 
-        public Guid? StoreId { get; set; } = null;
+        public Guid StoreId { get; set; }
 
         public Store? Store { get; set; } = null;
-
-        public List<int> ProductsPurchased { get; set; } = new List<int>();
-
-        public List<int> ProductsFavorites { get; set; } = new List<int>();
-
-        public List<int> StoresFavorites { get; set; } = new List<int>();
 
     }
 

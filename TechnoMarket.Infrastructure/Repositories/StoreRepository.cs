@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNet.Identity;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -38,10 +39,19 @@ namespace TechnoMarket.Infrastructure.Repositories
         }).ToList();
         }
 
-        public void CreateStore(Store store)
+        public void CreateStore(Store store, Guid userId)
         {
             _context.Stores.Add(store);
             _context.SaveChanges();
+
+            var user = _context.Users.Find(userId);
+            if (user != null)
+            {
+                user.StoreId = store.Id;
+                user.Role = UserRole.Seller;
+                _context.Users.Update(user);
+                _context.SaveChanges();
+            }
         }
 
 
@@ -52,12 +62,16 @@ namespace TechnoMarket.Infrastructure.Repositories
                 .Include(s => s.Inventory)
                 .Select(s => new StoreWithProductsDTO
                 {
+                    Id = s.Id,
                     Name = s.Name,
                     Rating = s.Rating,
                     Inventory = s.Inventory.Select(p => new ProductDTO
                     {
+                        Id = p.Id,
                         Name = p.Name,
-                        Price = p.Price
+                        Price = p.Price,
+                        Description = p.Description,
+                        Quantity = p.Quantity,
                     }).ToList()
                 })
                 .ToList();
@@ -95,6 +109,41 @@ namespace TechnoMarket.Infrastructure.Repositories
             {
                 throw new ApplicationException("Error al actualizar el usuario en la base de datos.", ex);
             }
+        }
+
+        public StoreWithProductsDTO StoreAndInventory(Guid storeId)
+        {
+            var storeAndInventory = _context.Stores
+            .Include(s => s.Inventory)
+            .Where(s => s.Id == storeId)
+            .Select(s => new StoreWithProductsDTO
+            {
+                Id = s.Id,
+                Name = s.Name,
+                Rating = s.Rating,
+                Inventory = s.Inventory.Select(p => new ProductDTO
+                {
+                    Id = p.Id,
+                    Name = p.Name,
+                    Price = p.Price,
+                    Description = p.Description,
+                    Quantity = p.Quantity,
+                }).ToList()
+            }).FirstOrDefault();
+
+            return storeAndInventory;
+        }
+
+        public void Delete(Guid storeId)
+        {
+            var store = _context.Stores.FirstOrDefault(s => s.Id == storeId);
+            if (store == null)
+            {
+                throw new ArgumentNullException(nameof(store), "la tienda no puede ser nula.");
+            }
+
+            _context.Stores.Remove(store);
+            _context.SaveChanges();
         }
 
     }

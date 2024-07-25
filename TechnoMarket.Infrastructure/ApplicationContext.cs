@@ -15,6 +15,7 @@ namespace TechnoMarket.Infrastructure
         public DbSet<Product> Products { get; set; }
         public DbSet<Store> Stores { get; set; }
         public DbSet<Sale> Sales { get; set; }
+        public DbSet<Category> Categories { get; set; }
 
 
         private readonly bool isTestingEnviroment;
@@ -28,14 +29,11 @@ namespace TechnoMarket.Infrastructure
         {
             base.OnModelCreating(modelBuilder);
 
-            // Configuración para la entidad Product
             modelBuilder.Entity<Product>()
                 .HasKey(p => p.Id); // Define la clave primaria para Product
 
-            /*modelBuilder.Entity<Store>()
-                .HasMany(s => s.Inventory) //una tienda tiene muchos productos
-                .WithOne(p => p.Store) //un producto viene de una tieda
-                .HasForeignKey(p => p.StoreId);*/
+            modelBuilder.Entity<Category>()
+            .HasKey(c => c.Id);
 
             modelBuilder
                 .Entity<User>()
@@ -45,7 +43,22 @@ namespace TechnoMarket.Infrastructure
             modelBuilder.Entity<User>()
             .HasOne(u => u.Store)
             .WithOne(s => s.Owner)
-            .HasForeignKey<Store>(s => s.idOwner);
+            .HasForeignKey<Store>(s => s.idOwner)
+            .OnDelete(DeleteBehavior.Cascade);
+
+            modelBuilder.Entity<Product>()
+            .HasOne(p => p.Store)
+            .WithMany(s => s.Inventory)
+            .HasForeignKey(p => p.StoreId)
+            .OnDelete(DeleteBehavior.Cascade);
+
+            modelBuilder.Entity<Product>()
+            .HasMany(p => p.Categories)
+            .WithMany(c => c.Products)
+            .UsingEntity(j => j.ToTable("ProductCategories")); //tabla intermedia que se usará para mantener la relación muchos a muchos.que contendrá las claves foráneas que vinculan Products y Categories.
+
+            modelBuilder.Entity<Category>()
+            .ToTable("Categories"); // Asegúrate de que esté mapeando a la tabla correcta
         }
     }
 }

@@ -10,6 +10,7 @@ namespace TechnoMarket.Application.IServices
 {
     public interface IUserService
     {
+        public void PromoteToAdmin(Guid userId);
         public User GetByEmail(string email);
         public List<UserDTO> Get();
         public UserModel CreateUser(UserCreateDTO userDTO);
@@ -17,7 +18,7 @@ namespace TechnoMarket.Application.IServices
         public User? DeleteUser(Guid id);
         public User? CheckCredentials(CredentialsRequest credentials);
         public User GetById(Guid id);
-        public void Update(UserUpdateDTO user, Guid id, int Opt);
+        public void Update(UserUpdateDTO user, Guid id);
         public void ChangeActive(Guid id);
     }
 }

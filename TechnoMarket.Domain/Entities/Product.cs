@@ -22,8 +22,6 @@ namespace TechnoMarket.Domain.Entities
 
         public bool Status { get; set; } = true;
 
-        //public ICollection<string> Images { get; set; }
-
         public decimal Rating { get; set; } = 0;
 
         public int Quantity { get; set; }
@@ -32,9 +30,11 @@ namespace TechnoMarket.Domain.Entities
 
         public decimal Discount { get; set; } = 0;
 
+        public Guid StoreId {  get; set; }
+
         public Store Store { get; set; }
 
-        //public int StoreId {  get; set; }
+        public ICollection<Category> Categories { get; set; } = new List<Category>();
 
         public Product() { }
 

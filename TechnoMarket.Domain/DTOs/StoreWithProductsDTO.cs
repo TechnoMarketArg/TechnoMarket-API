@@ -9,6 +9,8 @@ namespace TechnoMarket.Domain.DTOs
 {
     public class StoreWithProductsDTO
     {
+        public Guid Id { get; set; }
+
         public string Name { get; set; }
 
         public decimal Rating { get; set; }

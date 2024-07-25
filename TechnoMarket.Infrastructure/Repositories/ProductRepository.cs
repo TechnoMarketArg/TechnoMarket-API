@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TechnoMarket.Domain.DTOs;
 using TechnoMarket.Domain.Entities;
 using TechnoMarket.Domain.Interfaces;
 
@@ -30,6 +31,7 @@ namespace TechnoMarket.Infrastructure.Repositories
         public Product AddProduct(Product product)
         {
             _context.Products.Add(product);
+            _context.SaveChanges();
             return product;
         }
 
@@ -48,8 +50,21 @@ namespace TechnoMarket.Infrastructure.Repositories
 
         public void UpdateProduct(Product product)
         {
+
             _context.Products.Update(product);
             _context.SaveChanges();
+        }
+
+        public List<Category> GetCategories()
+        {
+            return _context.Categories.ToList();
+        }
+
+        public List<Product> GetProductsByCategory(Guid categoryId)
+        {
+            return _context.Products
+                .Where(p => p.Categories.Any(c => c.Id == categoryId))
+                .ToList();
         }
 
     }

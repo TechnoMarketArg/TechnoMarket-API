@@ -24,6 +24,29 @@ namespace TechnoMarket.Controllers
             _storeService = storeService;
         }
 
+        [HttpPost("promote-to-admin")]
+        [Authorize]
+        public IActionResult PromoteToAdmin()
+        {
+            var userIdClaim = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier)?.Value;
+            if (string.IsNullOrEmpty(userIdClaim))
+            {
+                return BadRequest("User ID claim not found.");
+            }
+
+            var userId = Guid.Parse(userIdClaim);
+
+            try
+            {
+                _userService.PromoteToAdmin(userId);
+                return Ok(new { message = "User promoted to admin successfully." });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
+        }
+
         [HttpGet("GetByEmail/{email}")]
         [Authorize(Roles = "Admin")]
         public IActionResult GetByEmail([FromRoute] string email)
@@ -71,6 +94,7 @@ namespace TechnoMarket.Controllers
         }
 
         [HttpPost("register")]
+        [AllowAnonymous]
         public IActionResult Register([FromBody] UserCreateDTO userDTO)
         {
             var createdUser = _userService.CreateUser(userDTO);
@@ -97,7 +121,7 @@ namespace TechnoMarket.Controllers
             }
 
             var userId = Guid.Parse(userIdClaim);
-            _userService.Update(userUpdateDTO, userId, 1);
+            _userService.Update(userUpdateDTO, userId);
             return Ok("User updated successfully");
         }
 

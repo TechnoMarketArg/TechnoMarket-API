@@ -15,8 +15,6 @@ namespace TechnoMarket.Domain.DTOs
 
         public decimal Price { get; set; }
 
-        public bool Status { get; set; } = true;
-
         public int Quantity { get; set; }
 
         public bool Offer { get; set; }
